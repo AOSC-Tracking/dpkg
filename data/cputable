@@ -26,7 +26,7 @@ armeb		armeb		arm.*b			32	big
 arm		arm		arm.*			32	little
 arm64		aarch64		aarch64			64	little
 hppa		hppa		hppa.*			32	big
-loong64		loongarch64	loongarch64		64	little
+loongarch64	loongarch64	loongarch64		64	little
 i486		i486		i486			32	little
 ia64		ia64		ia64			64	little
 m68k		m68k		m68k			32	big
