@@ -33,7 +33,7 @@ abin32-gnu-linux-mips64el	mipsn32el
 abin32-gnu-linux-mips64		mipsn32
 abi64-gnu-linux-mips64r6el	mips64r6el
 abi64-gnu-linux-mips64r6	mips64r6
-abi64-gnu-linux-mips64el	mips64el
+abi64-gnu-linux-mips64el	loongson2f
 abi64-gnu-linux-mips64		mips64
 spe-gnu-linux-powerpc		powerpcspe
 x32-gnu-linux-amd64		x32
