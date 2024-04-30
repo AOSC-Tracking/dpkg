@@ -25,7 +25,7 @@ eabi-uclibc-linux-arm		uclibc-linux-armel
 base-uclibc-linux-<cpu>		uclibc-linux-<cpu>
 eabihf-musl-linux-arm		musl-linux-armhf
 base-musl-linux-<cpu>		musl-linux-<cpu>
-eabihf-gnu-linux-arm		armhf
+eabihf-gnu-linux-arm		armv6hf
 eabi-gnu-linux-arm		armel
 abin32-gnu-linux-mips64r6el	mipsn32r6el
 abin32-gnu-linux-mips64r6	mipsn32r6
