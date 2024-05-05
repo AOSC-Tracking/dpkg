@@ -456,73 +456,17 @@ run_status_loggers(struct invoke_list *hook_list)
 static int
 arch_add(const char *const *argv)
 {
-  struct dpkg_arch *arch;
-  const char *archname = *argv++;
+  badusage(_("--add-architecture is not supported in AOSC OS. Please contact AOSC OS maintainers for any problems encountered."));
 
-  if (archname == NULL || *argv)
-    badusage(_("--%s takes exactly one argument"), cipaction->olong);
-
-  dpkg_arch_load_list();
-
-  arch = dpkg_arch_add(archname);
-  switch (arch->type) {
-  case DPKG_ARCH_NATIVE:
-  case DPKG_ARCH_FOREIGN:
-    break;
-  case DPKG_ARCH_ILLEGAL:
-    ohshit(_("architecture '%s' is illegal: %s"), archname,
-           dpkg_arch_name_is_illegal(archname));
-  default:
-    ohshit(_("architecture '%s' is reserved and cannot be added"), archname);
-  }
-
-  dpkg_arch_save_list();
-
-  return 0;
+  return 1;
 }
 
 static int
 arch_remove(const char *const *argv)
 {
-  const char *archname = *argv++;
-  struct dpkg_arch *arch;
-  struct pkg_hash_iter *iter;
-  struct pkginfo *pkg;
+  badusage(_("--remove-architecture is not supported in AOSC OS. Please contact AOSC OS maintainers for any problems encountered."));
 
-  if (archname == NULL || *argv)
-    badusage(_("--%s takes exactly one argument"), cipaction->olong);
-
-  modstatdb_open(msdbrw_readonly);
-
-  arch = dpkg_arch_find(archname);
-  if (arch->type != DPKG_ARCH_FOREIGN) {
-    warning(_("cannot remove non-foreign architecture '%s'"), arch->name);
-    return 0;
-  }
-
-  /* Check if it's safe to remove the architecture from the db. */
-  iter = pkg_hash_iter_new();
-  while ((pkg = pkg_hash_iter_next_pkg(iter))) {
-    if (pkg->status < PKG_STAT_HALFINSTALLED)
-      continue;
-    if (pkg->installed.arch == arch) {
-      if (in_force(FORCE_ARCHITECTURE))
-        warning(_("removing architecture '%s' currently in use by database"),
-                arch->name);
-      else
-        ohshit(_("cannot remove architecture '%s' currently in use by the database"),
-               arch->name);
-      break;
-    }
-  }
-  pkg_hash_iter_free(iter);
-
-  dpkg_arch_unmark(arch);
-  dpkg_arch_save_list();
-
-  modstatdb_shutdown();
-
-  return 0;
+  return 1;
 }
 
 int execbackend(const char *const *argv) DPKG_ATTR_NORET;
