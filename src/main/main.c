@@ -438,29 +438,9 @@ run_status_loggers(struct invoke_list *hook_list)
 static int
 arch_add(const char *const *argv)
 {
-  struct dpkg_arch *arch;
-  const char *archname = *argv++;
+  badusage(_("--add-architecture is not available in AOSC OS, please contact the AOSC OS developer if you encounter problems."));
 
-  if (archname == NULL || *argv)
-    badusage(_("--%s takes exactly one argument"), cipaction->olong);
-
-  dpkg_arch_load_list();
-
-  arch = dpkg_arch_add(archname);
-  switch (arch->type) {
-  case DPKG_ARCH_NATIVE:
-  case DPKG_ARCH_FOREIGN:
-    break;
-  case DPKG_ARCH_ILLEGAL:
-    ohshit(_("architecture '%s' is illegal: %s"), archname,
-           dpkg_arch_name_is_illegal(archname));
-  default:
-    ohshit(_("architecture '%s' is reserved and cannot be added"), archname);
-  }
-
-  dpkg_arch_save_list();
-
-  return 0;
+  return 1;
 }
 
 static int
