@@ -446,45 +446,9 @@ arch_add(const char *const *argv)
 static int
 arch_remove(const char *const *argv)
 {
-  const char *archname = *argv++;
-  struct dpkg_arch *arch;
-  struct pkg_hash_iter *iter;
-  struct pkginfo *pkg;
+  badusage(_("--remove-architecture is not available in AOSC OS, please contact the AOSC OS developer if you encounter problems."));
 
-  if (archname == NULL || *argv)
-    badusage(_("--%s takes exactly one argument"), cipaction->olong);
-
-  modstatdb_open(msdbrw_readonly);
-
-  arch = dpkg_arch_find(archname);
-  if (arch->type != DPKG_ARCH_FOREIGN) {
-    warning(_("cannot remove non-foreign architecture '%s'"), arch->name);
-    return 0;
-  }
-
-  /* Check if it's safe to remove the architecture from the db. */
-  iter = pkg_hash_iter_new();
-  while ((pkg = pkg_hash_iter_next_pkg(iter))) {
-    if (pkg->status < PKG_STAT_HALFINSTALLED)
-      continue;
-    if (pkg->installed.arch == arch) {
-      if (in_force(FORCE_ARCHITECTURE))
-        warning(_("removing architecture '%s' currently in use by database"),
-                arch->name);
-      else
-        ohshit(_("cannot remove architecture '%s' currently in use by the database"),
-               arch->name);
-      break;
-    }
-  }
-  pkg_hash_iter_free(iter);
-
-  dpkg_arch_unmark(arch);
-  dpkg_arch_save_list();
-
-  modstatdb_shutdown();
-
-  return 0;
+  return 1;
 }
 
 int execbackend(const char *const *argv) DPKG_ATTR_NORET;
