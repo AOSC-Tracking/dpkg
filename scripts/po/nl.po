@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg-dev 1.21.19\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:21+0100\n"
+"POT-Creation-Date: 2024-05-06 10:23+0800\n"
 "PO-Revision-Date: 2023-02-02 17:51+0100\n"
 "Last-Translator: Frans Spiesschaert <Frans.Spiesschaert@yucom.be>\n"
 "Language-Team: \n"
@@ -709,10 +709,6 @@ msgid "host architecture"
 msgstr "host-architectuur"
 
 #: scripts/dpkg-buildpackage.pl
-msgid "debian/rules is not executable; fixing that"
-msgstr "debian/rules is niet uitvoerbaar; dat wordt opgelost"
-
-#: scripts/dpkg-buildpackage.pl
 msgid "build dependencies/conflicts unsatisfied; aborting"
 msgstr "onvoldane bouwvereisten/conflicten; er wordt gestopt"
 
@@ -742,60 +738,6 @@ msgstr ""
 #, perl-format
 msgid "unable to determine %s"
 msgstr "niet in staat om %s te bepalen"
-
-#: scripts/dpkg-buildpackage.pl
-msgid "using a gain-root-command while being root"
-msgstr ""
-"gebruik van een commando om root te worden, terwijl dat al het geval is"
-
-#: scripts/dpkg-buildpackage.pl
-msgid ""
-"fakeroot not found, either install the fakeroot\n"
-"package, specify a command with the -r option, or run this as root"
-msgstr ""
-"fakeroot niet gevonden, installeer het pakket fakeroot,\n"
-"of geef een commando op met de optie -r, of voer dit uit als root"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "gain-root-command '%s' not found"
-msgstr "commando '%s' om root te worden niet gevonden"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "disallowed target in %s field keyword \"%s\""
-msgstr "niet-toegestaan doel in veld %s trefwoord \"%s\""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is unknown in dpkg namespace"
-msgstr "veld %s trefwoord \"%s\" is onbekend in dpkg-naamruimte"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is uppercase; use \"%s\" instead"
-msgstr ""
-"veld %s trefwoord \"%s\" is in hoofdletters; gebruik in plaats daarvan \"%s\""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is invalid; use \"%s\" instead"
-msgstr "veld %s trefwoord \"%s\" is ongeldig; gebruik in plaats daarvan \"%s\""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is unknown"
-msgstr "veld %s trefwoord \"%s\" is onbekend"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "field %s contains duplicate keyword \"%s\""
-msgstr "veld %s bevat dubbel trefwoord \"%s\""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field contains both global and implementation specific keywords"
-msgstr "veld %s bevat zowel algemene als implementatiespecifieke trefwoorden"
 
 #: scripts/dpkg-buildpackage.pl
 #, perl-format
@@ -874,15 +816,6 @@ msgstr "binaire upload met diff (originele broncode NIET inbegrepen)"
 #: scripts/dpkg-buildpackage.pl
 msgid "full upload (original source is included)"
 msgstr "volledig upload (originele broncode inbegrepen)"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid ""
-"%s must be updated to support the 'build-arch' and 'build-indep' targets (at "
-"least '%s' seems to be missing)"
-msgstr ""
-"%s moet worden bijgewerkt om de doelen 'build-arch' en 'build-indep' te "
-"ondersteunen (tenminste '%s' lijkt te ontbreken)"
 
 #: scripts/dpkg-buildtree.pl
 #, fuzzy
@@ -4465,6 +4398,64 @@ msgstr "versienummer bevat ongeldig teken '%s'"
 #, perl-format
 msgid "epoch part of the version number is not a number: '%s'"
 msgstr "epoch-gedeelte van het versienummer is geen nummer: '%s'"
+
+#~ msgid "debian/rules is not executable; fixing that"
+#~ msgstr "debian/rules is niet uitvoerbaar; dat wordt opgelost"
+
+#~ msgid "using a gain-root-command while being root"
+#~ msgstr ""
+#~ "gebruik van een commando om root te worden, terwijl dat al het geval is"
+
+#~ msgid ""
+#~ "fakeroot not found, either install the fakeroot\n"
+#~ "package, specify a command with the -r option, or run this as root"
+#~ msgstr ""
+#~ "fakeroot niet gevonden, installeer het pakket fakeroot,\n"
+#~ "of geef een commando op met de optie -r, of voer dit uit als root"
+
+#, perl-format
+#~ msgid "gain-root-command '%s' not found"
+#~ msgstr "commando '%s' om root te worden niet gevonden"
+
+#, perl-format
+#~ msgid "disallowed target in %s field keyword \"%s\""
+#~ msgstr "niet-toegestaan doel in veld %s trefwoord \"%s\""
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is unknown in dpkg namespace"
+#~ msgstr "veld %s trefwoord \"%s\" is onbekend in dpkg-naamruimte"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is uppercase; use \"%s\" instead"
+#~ msgstr ""
+#~ "veld %s trefwoord \"%s\" is in hoofdletters; gebruik in plaats daarvan "
+#~ "\"%s\""
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is invalid; use \"%s\" instead"
+#~ msgstr ""
+#~ "veld %s trefwoord \"%s\" is ongeldig; gebruik in plaats daarvan \"%s\""
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is unknown"
+#~ msgstr "veld %s trefwoord \"%s\" is onbekend"
+
+#, perl-format
+#~ msgid "field %s contains duplicate keyword \"%s\""
+#~ msgstr "veld %s bevat dubbel trefwoord \"%s\""
+
+#, perl-format
+#~ msgid "%s field contains both global and implementation specific keywords"
+#~ msgstr ""
+#~ "veld %s bevat zowel algemene als implementatiespecifieke trefwoorden"
+
+#, perl-format
+#~ msgid ""
+#~ "%s must be updated to support the 'build-arch' and 'build-indep' targets "
+#~ "(at least '%s' seems to be missing)"
+#~ msgstr ""
+#~ "%s moet worden bijgewerkt om de doelen 'build-arch' en 'build-indep' te "
+#~ "ondersteunen (tenminste '%s' lijkt te ontbreken)"
 
 #, fuzzy, perl-format
 #~| msgid "Usage: %s [<option>...]"

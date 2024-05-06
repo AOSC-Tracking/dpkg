@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg-dev 1.17.23\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:21+0100\n"
+"POT-Creation-Date: 2024-05-06 10:23+0800\n"
 "PO-Revision-Date: 2015-04-07 07:02+0200\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
@@ -669,10 +669,6 @@ msgid "host architecture"
 msgstr "архитектура узла"
 
 #: scripts/dpkg-buildpackage.pl
-msgid "debian/rules is not executable; fixing that"
-msgstr "debian/rules не является исполняемым; исправляем это"
-
-#: scripts/dpkg-buildpackage.pl
 msgid "build dependencies/conflicts unsatisfied; aborting"
 msgstr "неудовлетворительные зависимости/конфликты при сборке; прерываемся"
 
@@ -703,60 +699,6 @@ msgstr ""
 #, perl-format
 msgid "unable to determine %s"
 msgstr "невозможно определить %s"
-
-#: scripts/dpkg-buildpackage.pl
-msgid "using a gain-root-command while being root"
-msgstr "используется команда получения прав root, но уже есть права root"
-
-#: scripts/dpkg-buildpackage.pl
-msgid ""
-"fakeroot not found, either install the fakeroot\n"
-"package, specify a command with the -r option, or run this as root"
-msgstr ""
-"fakeroot не найдена, установите пакет fakeroot и\n"
-"запускайте команду с параметром -r, или запускайте её от root"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "gain-root-command '%s' not found"
-msgstr "команда-получения-root «%s» не найдена"
-
-#: scripts/dpkg-buildpackage.pl
-#, fuzzy, perl-format
-#| msgid "unknown file type"
-msgid "disallowed target in %s field keyword \"%s\""
-msgstr "неизвестный тип файла"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is unknown in dpkg namespace"
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is uppercase; use \"%s\" instead"
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is invalid; use \"%s\" instead"
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-#, fuzzy, perl-format
-#| msgid "unknown file type"
-msgid "%s field keyword \"%s\" is unknown"
-msgstr "неизвестный тип файла"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "field %s contains duplicate keyword \"%s\""
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field contains both global and implementation specific keywords"
-msgstr ""
 
 #: scripts/dpkg-buildpackage.pl
 #, perl-format
@@ -838,15 +780,6 @@ msgstr ""
 #: scripts/dpkg-buildpackage.pl
 msgid "full upload (original source is included)"
 msgstr "закачка всего (с пакетом оригинального исходного кода)"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid ""
-"%s must be updated to support the 'build-arch' and 'build-indep' targets (at "
-"least '%s' seems to be missing)"
-msgstr ""
-"для поддержки целей «build-arch» и «build-indep» требуется обновить %s (во "
-"всяком случае, будет отсутствовать «%s»)"
 
 #: scripts/dpkg-buildtree.pl
 #, fuzzy
@@ -4751,6 +4684,41 @@ msgstr "номер версии содержит недопустимый сим
 #, perl-format
 msgid "epoch part of the version number is not a number: '%s'"
 msgstr "часть эпохи в номере версии не является числом: «%s»"
+
+#~ msgid "debian/rules is not executable; fixing that"
+#~ msgstr "debian/rules не является исполняемым; исправляем это"
+
+#~ msgid "using a gain-root-command while being root"
+#~ msgstr "используется команда получения прав root, но уже есть права root"
+
+#~ msgid ""
+#~ "fakeroot not found, either install the fakeroot\n"
+#~ "package, specify a command with the -r option, or run this as root"
+#~ msgstr ""
+#~ "fakeroot не найдена, установите пакет fakeroot и\n"
+#~ "запускайте команду с параметром -r, или запускайте её от root"
+
+#, perl-format
+#~ msgid "gain-root-command '%s' not found"
+#~ msgstr "команда-получения-root «%s» не найдена"
+
+#, fuzzy, perl-format
+#~| msgid "unknown file type"
+#~ msgid "disallowed target in %s field keyword \"%s\""
+#~ msgstr "неизвестный тип файла"
+
+#, fuzzy, perl-format
+#~| msgid "unknown file type"
+#~ msgid "%s field keyword \"%s\" is unknown"
+#~ msgstr "неизвестный тип файла"
+
+#, perl-format
+#~ msgid ""
+#~ "%s must be updated to support the 'build-arch' and 'build-indep' targets "
+#~ "(at least '%s' seems to be missing)"
+#~ msgstr ""
+#~ "для поддержки целей «build-arch» и «build-indep» требуется обновить %s "
+#~ "(во всяком случае, будет отсутствовать «%s»)"
 
 #, fuzzy, perl-format
 #~| msgid "Usage: %s [<option>...]"

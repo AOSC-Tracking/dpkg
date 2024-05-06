@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.22.7~\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-04-29 17:53+0200\n"
+"POT-Creation-Date: 2024-05-06 10:23+0800\n"
 "PO-Revision-Date: 2024-04-29 18:35+0200\n"
 "Last-Translator: Sven Joachim <svenjoac@gmx.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
@@ -5722,31 +5722,16 @@ msgid "status logger"
 msgstr "Statuslogger"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "Architektur »%s« ist ungültig: %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "Architektur »%s« ist reserviert und kann nicht hinzugefügt werden"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "Nicht-fremde Architektur »%s« kann nicht entfernt werden"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "Architektur »%s«, derzeit verwendet von der Datenbank, wird entfernt"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--add-architecture is not available in AOSC OS, please contact the AOSC OS "
+"developer if you encounter problems."
 msgstr ""
-"Architektur »%s«, derzeit verwendet von der Datenbank, kann nicht entfernt "
-"werden"
+
+#: src/main/main.c
+msgid ""
+"--remove-architecture is not available in AOSC OS, please contact the AOSC "
+"OS developer if you encounter problems."
+msgstr ""
 
 #: src/main/main.c
 #, c-format
@@ -7166,6 +7151,29 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "Authentifizierung ist erforderlich, um update-alternatives auszuführen"
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "Architektur »%s« ist ungültig: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "Architektur »%s« ist reserviert und kann nicht hinzugefügt werden"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "Nicht-fremde Architektur »%s« kann nicht entfernt werden"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr ""
+#~ "Architektur »%s«, derzeit verwendet von der Datenbank, wird entfernt"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "Architektur »%s«, derzeit verwendet von der Datenbank, kann nicht "
+#~ "entfernt werden"
 
 #~ msgid "failed to open diversions file"
 #~ msgstr "Öffnen der diversions-Datei fehlgeschlagen"

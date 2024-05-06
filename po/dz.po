@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.17.0\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:20+0100\n"
+"POT-Creation-Date: 2024-05-06 10:23+0800\n"
 "PO-Revision-Date: 2015-04-07 09:48+0200\n"
 "Last-Translator: Tshewang Norbu <bumthap2006@hotmail.com>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
@@ -600,14 +600,6 @@ msgid "loading control file '%s' for package '%s'"
 msgstr "རིམ་སྒྲིག་ཡིག་སྣོད་ སྣོད་ཐོ་`%.250s'(`%.250s' ལས་)ལྷག་མ་ཚུགས།"
 
 #: lib/dpkg/db-fsys-divert.c
-msgid "failed to open diversions file"
-msgstr "ཁ་སྒྱུར་ཡིག་སྣོད་ཁ་ཕྱེ་ནི་འཐུས་ཤོར་བྱུང་ཡོད།"
-
-#: lib/dpkg/db-fsys-divert.c
-msgid "failed to fstat diversions file"
-msgstr "ཁ་སྒྱུར་ཡིག་སྣོད་ཨེཕ་སི་ཊེཊི་འབད་ནི་ལུ་འཐུས་ཤོར་བྱུང་ཡོད།"
-
-#: lib/dpkg/db-fsys-divert.c
 #, c-format
 msgid "conflicting diversions involving '%.250s' or '%.250s'"
 msgstr "`%.250s' ཡང་ན་ `%.250s' འབྲེལ་བ་ཡོད་མི་མི་མཐུན་པའི་ཁ་སྒྱུར་ཚུ།"
@@ -649,6 +641,17 @@ msgid_plural "%d files and directories currently installed.)\n"
 msgstr[0] "%d ཡིག་སྣོད་ཚུ་དང་སྣོད་ཐོ་ཚུ་ད་ལྟོ་གཞི་བཙུགས་འབད་ཡོད།)\n"
 msgstr[1] "%d ཡིག་སྣོད་ཚུ་དང་སྣོད་ཐོ་ཚུ་ད་ལྟོ་གཞི་བཙུགས་འབད་ཡོད།)\n"
 
+#: lib/dpkg/db-fsys-load.c
+#, fuzzy, c-format
+#| msgid "%s: can't open %s: %s"
+msgid "cannot open %s file"
+msgstr "%s: %s ཁ་ཕྱེ་མི་ཚུགས་: %s"
+
+#: lib/dpkg/db-fsys-load.c
+#, fuzzy, c-format
+msgid "cannot get %s file metadata"
+msgstr "འབྱུང་ཁུངས་ཡིག་སྣོད་ `%.250s' ཁ་ཕྱེ་མ་ཚུགས།"
+
 #: lib/dpkg/db-fsys-override.c
 #, fuzzy, c-format
 msgid "invalid statoverride uid %s"
@@ -665,14 +668,6 @@ msgstr "ཌི་པི་ཀེ་ཇི་-སི་ཊེཊི་ཟུར�
 #| msgid "dpkg-statoverride: %s"
 msgid "invalid statoverride mode %s"
 msgstr "ཌི་པི་ཀེ་ཇི་-སི་ཊེཊི་ཟུར་བཞག: %s"
-
-#: lib/dpkg/db-fsys-override.c
-msgid "failed to open statoverride file"
-msgstr "སི་ཊེཊི་ཟུར་བཞག་ཡིག་སྣོད་ཁ་ཕྱེ་ནི་འཐུས་ཤོར་བྱུང་ཡོད།"
-
-#: lib/dpkg/db-fsys-override.c
-msgid "failed to fstat statoverride file"
-msgstr "སི་ཊེཊི་ཟུར་བཞག་ཡིག་སྣོད་ཨེཕ་སི་ཊེཊི་འབད་ནི་ལུ་འཐུས་ཤོར་བྱུང་ཡོད།"
 
 #: lib/dpkg/db-fsys-override.c
 #, fuzzy, c-format
@@ -2149,11 +2144,11 @@ msgid ""
 "Forcing options marked [*] are enabled by default.\n"
 msgstr ""
 
-#: src/common/force.c src/deb/build.c src/deb/extract.c src/deb/info.c
-#: src/deb/main.c src/split/info.c src/split/main.c src/split/queue.c
-#: src/divert/main.c src/statoverride/main.c src/trigger/main.c
-#: src/query/main.c src/main/archives.c src/main/enquiry.c src/main/main.c
-#: src/main/packages.c src/main/select.c src/main/verify.c
+#: src/common/force.c src/realpath/main.c src/deb/build.c src/deb/extract.c
+#: src/deb/info.c src/deb/main.c src/split/info.c src/split/main.c
+#: src/split/queue.c src/divert/main.c src/statoverride/main.c
+#: src/trigger/main.c src/query/main.c src/main/archives.c src/main/enquiry.c
+#: src/main/main.c src/main/packages.c src/main/select.c src/main/verify.c
 msgid "<standard output>"
 msgstr ""
 
@@ -2196,6 +2191,78 @@ msgstr ""
 #| msgid "cannot read config file dir `%.250s' (from `%.250s')"
 msgid "cannot set security context for file object '%s'"
 msgstr "རིམ་སྒྲིག་ཡིག་སྣོད་ སྣོད་ཐོ་`%.250s'(`%.250s' ལས་)ལྷག་མ་ཚུགས།"
+
+#: src/realpath/main.c
+#, fuzzy
+msgid "Use --help for help about this utility."
+msgstr "དབྱེ་བ་ ཌི་པི་ཀེ་ཇི་-བཤག་ --གྲོགས་རམ་གྱི་དོན་ལུ་གྲོགས་རམ།"
+
+#: src/realpath/main.c src/divert/main.c src/statoverride/main.c
+#, c-format
+msgid "Debian %s version %s.\n"
+msgstr "ཌེ་བི་ཡཱན་ %s ཐོན་རིམ་ %s\n"
+
+#: src/realpath/main.c src/deb/main.c src/split/main.c src/divert/main.c
+#: src/statoverride/main.c src/trigger/main.c src/query/main.c src/main/main.c
+#: utils/update-alternatives.c
+#, fuzzy, c-format
+msgid ""
+"This is free software; see the GNU General Public License version 2 or\n"
+"later for copying conditions. There is NO warranty.\n"
+msgstr ""
+"\n"
+"འ་ནི་འདི་རང་དབང་མཉེན་ཆས་ཨིན། ཇི་ཨེན་ཡུ་ ཡོངས་ཁྱབ་མི་མང་ཆོག་ཐམ་ཐོན་རིམ་ ༢ ཡང་ན་\n"
+"ཤུལ་མམ་འདི་ གནས་སྟངས་ཚུ་འདྲ་བཤུས་རྐྱབས་ནིའི་དོན་ལུ་ བལྟ། ཉེན་ལེན་ག་ནི་ཡང་མེད།\n"
+
+#: src/realpath/main.c
+#, fuzzy, c-format
+#| msgid ""
+#| "Usage: %s [<option> ...] <command>\n"
+#| "\n"
+msgid ""
+"Usage: %s [<option>...] <pathname>\n"
+"\n"
+msgstr ""
+"ལག་ལེན་: %s [<option> ...] <command>\n"
+"\n"
+
+#: src/realpath/main.c
+#, c-format
+msgid ""
+"Options:\n"
+"  -z, --zero                   end output line with NUL, not newline.\n"
+"      --instdir <directory>    set the root directory.\n"
+"      --root <directory>       set the root directory.\n"
+"      --version                show the version.\n"
+"      --help                   show this help message.\n"
+"\n"
+msgstr ""
+
+#: src/realpath/main.c
+msgid "too many levels of symbolic links"
+msgstr ""
+
+#: src/realpath/main.c
+#, fuzzy, c-format
+#| msgid "write %s: %s"
+msgid "cannot read link '%s'"
+msgstr "%s: %s འབྲི།"
+
+#: src/realpath/main.c
+#, c-format
+msgid "symbolic link '%s' size has changed from %jd to %zd"
+msgstr ""
+
+#: src/realpath/main.c
+#, fuzzy
+#| msgid "--%s needs a <package> argument"
+msgid "need a pathname argument"
+msgstr "--%s་ལུ་ <ཐུམ་སྒྲིལ་>སྒྲུབ་རྟགས་ཅིག་དགོཔ་འདུག"
+
+#: src/realpath/main.c
+#, c-format
+msgid "link '%s' includes root prefix '%s'"
+msgstr ""
 
 #: src/deb/build.c
 #, fuzzy, c-format
@@ -2751,18 +2818,6 @@ msgstr "--ནང་དོན་གྱིས་སྒྲུབ་རྟགས་�
 #, c-format
 msgid "Debian '%s' package archive backend version %s.\n"
 msgstr "ཌི་བི་ཡཱན་ `%s' ཐུམ་སྒྲིལ་ཡིག་མཛོད་ཀྱིས་ཐོན་རིམ་ %s རྒྱབ་མཐའ་འབད་ཡོད།\n"
-
-#: src/deb/main.c src/split/main.c src/divert/main.c src/statoverride/main.c
-#: src/trigger/main.c src/query/main.c src/main/main.c
-#: utils/update-alternatives.c
-#, fuzzy, c-format
-msgid ""
-"This is free software; see the GNU General Public License version 2 or\n"
-"later for copying conditions. There is NO warranty.\n"
-msgstr ""
-"\n"
-"འ་ནི་འདི་རང་དབང་མཉེན་ཆས་ཨིན། ཇི་ཨེན་ཡུ་ ཡོངས་ཁྱབ་མི་མང་ཆོག་ཐམ་ཐོན་རིམ་ ༢ ཡང་ན་\n"
-"ཤུལ་མམ་འདི་ གནས་སྟངས་ཚུ་འདྲ་བཤུས་རྐྱབས་ནིའི་དོན་ལུ་ བལྟ། ཉེན་ལེན་ག་ནི་ཡང་མེད།\n"
 
 #: src/deb/main.c src/divert/main.c src/query/main.c src/main/main.c
 #, fuzzy, c-format
@@ -3540,11 +3595,6 @@ msgstr "--བཤག་ནི་འདི་གིས་ འབྱུང་ཁུ
 #, fuzzy
 msgid "Use --help for help about diverting files."
 msgstr "དབྱེ་བ་ ཌི་པི་ཀེ་ཇི་-བཤག་ --གྲོགས་རམ་གྱི་དོན་ལུ་གྲོགས་རམ།"
-
-#: src/divert/main.c src/statoverride/main.c
-#, c-format
-msgid "Debian %s version %s.\n"
-msgstr "ཌེ་བི་ཡཱན་ %s ཐོན་རིམ་ %s\n"
 
 #: src/divert/main.c
 #, c-format
@@ -4355,8 +4405,8 @@ msgstr "ཀཱོན་ཕ་ཡིལ་`%.250s' འདི་ ཐུམ་ས�
 #: src/main/archives.c
 #, fuzzy, c-format
 msgid ""
-"trying to overwrite '%.250s', which is the diverted version of "
-"'%.250s' (package: %.100s)"
+"trying to overwrite '%.250s', which is the diverted version of '%.250s' "
+"(package: %.100s)"
 msgstr ""
 "`%.250s'%.10s%.100s%.10s གི་ཁ་ཕྱོགས་སྒྱུར་ཡོད་པའི་ཐོན་རིམ་ཨིན་མི་ `%.250s' འདི་ཚབ་སྲུང་འབད་"
 "ནི་ལུ་འབད་རྩོལ་བསྐྱེད་དོ།"
@@ -5856,29 +5906,15 @@ msgid "status logger"
 msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
+msgid ""
+"--add-architecture is not available in AOSC OS, please contact the AOSC OS "
+"developer if you encounter problems."
 msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr ""
-
-#: src/main/main.c
-#, fuzzy, c-format
-#| msgid "cannot remove file `%.250s'"
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "ཡིག་སྣོད་ `%.250s' རྩ་བསྐྲད་གཏང་མི་ཚུགས།"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr ""
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--remove-architecture is not available in AOSC OS, please contact the AOSC "
+"OS developer if you encounter problems."
 msgstr ""
 
 #: src/main/main.c
@@ -7348,6 +7384,23 @@ msgstr ""
 msgid "Authentication is required to run update-alternatives"
 msgstr ""
 
+#~ msgid "failed to open diversions file"
+#~ msgstr "ཁ་སྒྱུར་ཡིག་སྣོད་ཁ་ཕྱེ་ནི་འཐུས་ཤོར་བྱུང་ཡོད།"
+
+#~ msgid "failed to fstat diversions file"
+#~ msgstr "ཁ་སྒྱུར་ཡིག་སྣོད་ཨེཕ་སི་ཊེཊི་འབད་ནི་ལུ་འཐུས་ཤོར་བྱུང་ཡོད།"
+
+#~ msgid "failed to open statoverride file"
+#~ msgstr "སི་ཊེཊི་ཟུར་བཞག་ཡིག་སྣོད་ཁ་ཕྱེ་ནི་འཐུས་ཤོར་བྱུང་ཡོད།"
+
+#~ msgid "failed to fstat statoverride file"
+#~ msgstr "སི་ཊེཊི་ཟུར་བཞག་ཡིག་སྣོད་ཨེཕ་སི་ཊེཊི་འབད་ནི་ལུ་འཐུས་ཤོར་བྱུང་ཡོད།"
+
+#, fuzzy, c-format
+#~| msgid "cannot remove file `%.250s'"
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "ཡིག་སྣོད་ `%.250s' རྩ་བསྐྲད་གཏང་མི་ཚུགས།"
+
 #, fuzzy, c-format
 #~ msgid "removal of %.250s"
 #~ msgstr "%.250s ནང་ལྷག་པའི་འཛོལ་བ།"
@@ -8192,9 +8245,6 @@ msgstr ""
 
 #~ msgid "--%s needs a divert-to argument"
 #~ msgstr "སྒྲུབ་རྟགས་སྟོན་ནི་ལུ་--%s ལུ་ཁ་ཕྱོགས་བསྒྱུར་བ་ཅིག་དགོཔ་ཨིན།"
-
-#~ msgid "--%s needs a <package> argument"
-#~ msgstr "--%s་ལུ་ <ཐུམ་སྒྲིལ་>སྒྲུབ་རྟགས་ཅིག་དགོཔ་འདུག"
 
 #~ msgid "rename: rename `%s' to `%s': %s"
 #~ msgstr "བསྐྱར་མིང་བཏགས་:  `%s' འདི་ `%s' ལུ་བསྐྱར་མིང་བཏགས་: %s"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.21.20\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:20+0100\n"
+"POT-Creation-Date: 2024-05-06 10:23+0800\n"
 "PO-Revision-Date: 2023-02-05 23:44+0100\n"
 "Last-Translator: Nagy Elemér Károly <nagy.elemer.karoly@gmail.com>\n"
 "Language-Team: Hungarian <debian-l10n-hungarian@lists.debian.org>\n"
@@ -553,14 +553,6 @@ msgid "loading control file '%s' for package '%s'"
 msgstr "olvashatatlan `%.250s' konfig fájl könyvtár (innen: `%.250s')"
 
 #: lib/dpkg/db-fsys-divert.c
-msgid "failed to open diversions file"
-msgstr "eltérítés fájl megnyitása sikertelen"
-
-#: lib/dpkg/db-fsys-divert.c
-msgid "failed to fstat diversions file"
-msgstr "eltérítés fájl fstat sikertelen"
-
-#: lib/dpkg/db-fsys-divert.c
 #, c-format
 msgid "conflicting diversions involving '%.250s' or '%.250s'"
 msgstr "`%.250s'-t vagy `%.250s'-t érintő ütköző eltérítések"
@@ -600,6 +592,17 @@ msgid "%d file or directory currently installed.)\n"
 msgid_plural "%d files and directories currently installed.)\n"
 msgstr[0] "Most %d fájl és könyvtár telepített.)\n"
 
+#: lib/dpkg/db-fsys-load.c
+#, fuzzy, c-format
+#| msgid "%s: can't open %s: %s"
+msgid "cannot open %s file"
+msgstr "%s: %s nem nyitható meg: %s"
+
+#: lib/dpkg/db-fsys-load.c
+#, fuzzy, c-format
+msgid "cannot get %s file metadata"
+msgstr "e forrásfájl nem megnyitható: `%.250s'"
+
 #: lib/dpkg/db-fsys-override.c
 #, fuzzy, c-format
 #| msgid "statoverride file `%.250s'"
@@ -617,14 +620,6 @@ msgstr "statoverride fájl: `%.250s'"
 #| msgid "statoverride file `%.250s'"
 msgid "invalid statoverride mode %s"
 msgstr "statoverride fájl: `%.250s'"
-
-#: lib/dpkg/db-fsys-override.c
-msgid "failed to open statoverride file"
-msgstr "nem sikerült megnyitni a statoverride fájlt"
-
-#: lib/dpkg/db-fsys-override.c
-msgid "failed to fstat statoverride file"
-msgstr "nem sikerült fstat-olni a statoverride fájlt"
 
 #: lib/dpkg/db-fsys-override.c
 #, fuzzy, c-format
@@ -2096,11 +2091,11 @@ msgid ""
 "Forcing options marked [*] are enabled by default.\n"
 msgstr ""
 
-#: src/common/force.c src/deb/build.c src/deb/extract.c src/deb/info.c
-#: src/deb/main.c src/split/info.c src/split/main.c src/split/queue.c
-#: src/divert/main.c src/statoverride/main.c src/trigger/main.c
-#: src/query/main.c src/main/archives.c src/main/enquiry.c src/main/main.c
-#: src/main/packages.c src/main/select.c src/main/verify.c
+#: src/common/force.c src/realpath/main.c src/deb/build.c src/deb/extract.c
+#: src/deb/info.c src/deb/main.c src/split/info.c src/split/main.c
+#: src/split/queue.c src/divert/main.c src/statoverride/main.c
+#: src/trigger/main.c src/query/main.c src/main/archives.c src/main/enquiry.c
+#: src/main/main.c src/main/packages.c src/main/select.c src/main/verify.c
 msgid "<standard output>"
 msgstr ""
 
@@ -2142,6 +2137,79 @@ msgstr ""
 #| msgid "cannot read config file dir `%.250s' (from `%.250s')"
 msgid "cannot set security context for file object '%s'"
 msgstr "olvashatatlan `%.250s' konfig fájl könyvtár (innen: `%.250s')"
+
+#: src/realpath/main.c
+#, fuzzy
+#| msgid "Type dpkg-trigger --help for help about this utility."
+msgid "Use --help for help about this utility."
+msgstr "A dpkg-trigger --help parancs segít."
+
+#: src/realpath/main.c src/divert/main.c src/statoverride/main.c
+#, c-format
+msgid "Debian %s version %s.\n"
+msgstr "Debian %s %s verzió.\n"
+
+#: src/realpath/main.c src/deb/main.c src/split/main.c src/divert/main.c
+#: src/statoverride/main.c src/trigger/main.c src/query/main.c src/main/main.c
+#: utils/update-alternatives.c
+#, fuzzy, c-format
+msgid ""
+"This is free software; see the GNU General Public License version 2 or\n"
+"later for copying conditions. There is NO warranty.\n"
+msgstr ""
+"\n"
+"Ez egy Szabad Szoftver; l. a GNU General Public Licence 2-es vagy nagyobb\n"
+"változatát a másolási feltételekért. NINCS garancia.\n"
+
+#: src/realpath/main.c
+#, fuzzy, c-format
+#| msgid ""
+#| "Usage: %s [<option> ...] <command>\n"
+#| "\n"
+msgid ""
+"Usage: %s [<option>...] <pathname>\n"
+"\n"
+msgstr ""
+"Használat: %s [<opció> ...] <parancs>\n"
+"\n"
+
+#: src/realpath/main.c
+#, c-format
+msgid ""
+"Options:\n"
+"  -z, --zero                   end output line with NUL, not newline.\n"
+"      --instdir <directory>    set the root directory.\n"
+"      --root <directory>       set the root directory.\n"
+"      --version                show the version.\n"
+"      --help                   show this help message.\n"
+"\n"
+msgstr ""
+
+#: src/realpath/main.c
+msgid "too many levels of symbolic links"
+msgstr ""
+
+#: src/realpath/main.c
+#, fuzzy, c-format
+#| msgid "unable to write %s: %s"
+msgid "cannot read link '%s'"
+msgstr "%s írása sikertelen: %s"
+
+#: src/realpath/main.c
+#, c-format
+msgid "symbolic link '%s' size has changed from %jd to %zd"
+msgstr ""
+
+#: src/realpath/main.c
+#, fuzzy
+#| msgid "--%s needs a <package> argument"
+msgid "need a pathname argument"
+msgstr "--%s egy <csomag> argumentumot vár"
+
+#: src/realpath/main.c
+#, c-format
+msgid "link '%s' includes root prefix '%s'"
+msgstr ""
 
 #: src/deb/build.c
 #, fuzzy, c-format
@@ -2691,18 +2759,6 @@ msgstr "a --contents 1 argumentumot vár"
 #, c-format
 msgid "Debian '%s' package archive backend version %s.\n"
 msgstr "Debian `%s' csomag archívum háttér %s változat .\n"
-
-#: src/deb/main.c src/split/main.c src/divert/main.c src/statoverride/main.c
-#: src/trigger/main.c src/query/main.c src/main/main.c
-#: utils/update-alternatives.c
-#, fuzzy, c-format
-msgid ""
-"This is free software; see the GNU General Public License version 2 or\n"
-"later for copying conditions. There is NO warranty.\n"
-msgstr ""
-"\n"
-"Ez egy Szabad Szoftver; l. a GNU General Public Licence 2-es vagy nagyobb\n"
-"változatát a másolási feltételekért. NINCS garancia.\n"
 
 #: src/deb/main.c src/divert/main.c src/query/main.c src/main/main.c
 #, fuzzy, c-format
@@ -3435,11 +3491,6 @@ msgstr "a --split egy forrás fájlnevet és cél előtagot fogad"
 #: src/divert/main.c
 msgid "Use --help for help about diverting files."
 msgstr "A --help kapcsoló segít a fájlok átirányításával kapcsolatban."
-
-#: src/divert/main.c src/statoverride/main.c
-#, c-format
-msgid "Debian %s version %s.\n"
-msgstr "Debian %s %s verzió.\n"
 
 #: src/divert/main.c
 #, c-format
@@ -4243,8 +4294,8 @@ msgstr "úgy fest, `%.250s' konffájl nincs a csomagban"
 #: src/main/archives.c
 #, fuzzy, c-format
 msgid ""
-"trying to overwrite '%.250s', which is the diverted version of "
-"'%.250s' (package: %.100s)"
+"trying to overwrite '%.250s', which is the diverted version of '%.250s' "
+"(package: %.100s)"
 msgstr ""
 "kísérlet `%.255s' felülírására, ami a(z) `%.250s'%.10s%.100s%.10s eltérített "
 "verziója."
@@ -5718,29 +5769,15 @@ msgid "status logger"
 msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
+msgid ""
+"--add-architecture is not available in AOSC OS, please contact the AOSC OS "
+"developer if you encounter problems."
 msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr ""
-
-#: src/main/main.c
-#, fuzzy, c-format
-#| msgid "cannot remove file `%.250s'"
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "nem törölhető fájl: `%.250s'"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr ""
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--remove-architecture is not available in AOSC OS, please contact the AOSC "
+"OS developer if you encounter problems."
 msgstr ""
 
 #: src/main/main.c
@@ -7165,6 +7202,23 @@ msgstr ""
 msgid "Authentication is required to run update-alternatives"
 msgstr ""
 
+#~ msgid "failed to open diversions file"
+#~ msgstr "eltérítés fájl megnyitása sikertelen"
+
+#~ msgid "failed to fstat diversions file"
+#~ msgstr "eltérítés fájl fstat sikertelen"
+
+#~ msgid "failed to open statoverride file"
+#~ msgstr "nem sikerült megnyitni a statoverride fájlt"
+
+#~ msgid "failed to fstat statoverride file"
+#~ msgstr "nem sikerült fstat-olni a statoverride fájlt"
+
+#, fuzzy, c-format
+#~| msgid "cannot remove file `%.250s'"
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "nem törölhető fájl: `%.250s'"
+
 #, fuzzy, c-format
 #~ msgid "removal of %.250s"
 #~ msgstr "olvasási hiba itt: %.250s"
@@ -7974,9 +8028,6 @@ msgstr ""
 
 #~ msgid "--%s needs a divert-to argument"
 #~ msgstr "--%s egy divert-to argumentumot vár"
-
-#~ msgid "--%s needs a <package> argument"
-#~ msgstr "--%s egy <csomag> argumentumot vár"
 
 #~ msgid "rename: rename `%s' to `%s': %s"
 #~ msgstr "átnevezés: `%s' átnevezése erre: `%s': %s"

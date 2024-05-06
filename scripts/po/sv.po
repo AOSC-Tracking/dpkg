@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg-dev 1.22.0\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:21+0100\n"
+"POT-Creation-Date: 2024-05-06 10:23+0800\n"
 "PO-Revision-Date: 2024-04-28 14:34+0100\n"
 "Last-Translator: Peter Krefting <peter@softwolves.pp.se>\n"
 "Language-Team: Svenska <tp-sv@listor.tp-sv.se>\n"
@@ -572,10 +572,6 @@ msgid "host architecture"
 msgstr "värdarkitektur"
 
 #: scripts/dpkg-buildpackage.pl
-msgid "debian/rules is not executable; fixing that"
-msgstr "debian/rules är inte exekverbar: rättar"
-
-#: scripts/dpkg-buildpackage.pl
 msgid "build dependencies/conflicts unsatisfied; aborting"
 msgstr "byggberoenden/-konflikter ej uppfyllda; avbryter"
 
@@ -604,59 +600,6 @@ msgstr ""
 #, perl-format
 msgid "unable to determine %s"
 msgstr "kan inte bestämma %s"
-
-#: scripts/dpkg-buildpackage.pl
-msgid "using a gain-root-command while being root"
-msgstr "använder ett gain-root-command fast jag redan är root"
-
-#: scripts/dpkg-buildpackage.pl
-msgid ""
-"fakeroot not found, either install the fakeroot\n"
-"package, specify a command with the -r option, or run this as root"
-msgstr ""
-"fakeroot hittades inte, du kan installera paketet fakeroot,\n"
-"ange ett kommando med flaggan -r, eller köra som root"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "gain-root-command '%s' not found"
-msgstr "få-root-kommandot ”%s” hittades inte"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "disallowed target in %s field keyword \"%s\""
-msgstr "otillåtet mål i %s-fältet nyckelord ”%s”"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is unknown in dpkg namespace"
-msgstr "%s-fältet nyckelord ”%s” är okänt i dpkg-namnrymden"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is uppercase; use \"%s\" instead"
-msgstr "%s-fältet nyckelord ”%s” har stora bokstäver; använd ”%s” istället"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is invalid; use \"%s\" instead"
-msgstr "%s-fältet nyckelord ”%s” är ogiltigt; använd ”%s” istället"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is unknown"
-msgstr "%s-fältet nyckelord ”%s” är okänt"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "field %s contains duplicate keyword \"%s\""
-msgstr "fältet %s innehåller duplicerat nyckelord ”%s”"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field contains both global and implementation specific keywords"
-msgstr ""
-"%s-fältet innehåller både globala och implementationsspecifika nyckelord"
 
 #: scripts/dpkg-buildpackage.pl
 #, perl-format
@@ -734,15 +677,6 @@ msgstr "binär- och diffinsändning (originalkällkod tas EJ med)"
 #: scripts/dpkg-buildpackage.pl
 msgid "full upload (original source is included)"
 msgstr "komplett insändning (originalkällkod tas med)"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid ""
-"%s must be updated to support the 'build-arch' and 'build-indep' targets (at "
-"least '%s' seems to be missing)"
-msgstr ""
-"%s måste uppdateras för att stöda målen ”build-arch” och ”build-"
-"indep” (åtminstone ”%s” verkar saknas)"
 
 #: scripts/dpkg-buildtree.pl
 msgid ""
@@ -4221,3 +4155,57 @@ msgstr "versionsnummer innehåller ogiltigt tecken ”%s”"
 #, perl-format
 msgid "epoch part of the version number is not a number: '%s'"
 msgstr "epokdelen av versionsnumret är inte ett tal: ”%s”"
+
+#~ msgid "debian/rules is not executable; fixing that"
+#~ msgstr "debian/rules är inte exekverbar: rättar"
+
+#~ msgid "using a gain-root-command while being root"
+#~ msgstr "använder ett gain-root-command fast jag redan är root"
+
+#~ msgid ""
+#~ "fakeroot not found, either install the fakeroot\n"
+#~ "package, specify a command with the -r option, or run this as root"
+#~ msgstr ""
+#~ "fakeroot hittades inte, du kan installera paketet fakeroot,\n"
+#~ "ange ett kommando med flaggan -r, eller köra som root"
+
+#, perl-format
+#~ msgid "gain-root-command '%s' not found"
+#~ msgstr "få-root-kommandot ”%s” hittades inte"
+
+#, perl-format
+#~ msgid "disallowed target in %s field keyword \"%s\""
+#~ msgstr "otillåtet mål i %s-fältet nyckelord ”%s”"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is unknown in dpkg namespace"
+#~ msgstr "%s-fältet nyckelord ”%s” är okänt i dpkg-namnrymden"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is uppercase; use \"%s\" instead"
+#~ msgstr "%s-fältet nyckelord ”%s” har stora bokstäver; använd ”%s” istället"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is invalid; use \"%s\" instead"
+#~ msgstr "%s-fältet nyckelord ”%s” är ogiltigt; använd ”%s” istället"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is unknown"
+#~ msgstr "%s-fältet nyckelord ”%s” är okänt"
+
+#, perl-format
+#~ msgid "field %s contains duplicate keyword \"%s\""
+#~ msgstr "fältet %s innehåller duplicerat nyckelord ”%s”"
+
+#, perl-format
+#~ msgid "%s field contains both global and implementation specific keywords"
+#~ msgstr ""
+#~ "%s-fältet innehåller både globala och implementationsspecifika nyckelord"
+
+#, perl-format
+#~ msgid ""
+#~ "%s must be updated to support the 'build-arch' and 'build-indep' targets "
+#~ "(at least '%s' seems to be missing)"
+#~ msgstr ""
+#~ "%s måste uppdateras för att stöda målen ”build-arch” och ”build-indep” "
+#~ "(åtminstone ”%s” verkar saknas)"

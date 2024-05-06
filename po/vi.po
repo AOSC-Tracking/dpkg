@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.18.2\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:20+0100\n"
+"POT-Creation-Date: 2024-05-06 10:23+0800\n"
 "PO-Revision-Date: 2016-01-14 08:22+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <debian-l10n-vietnamese@lists.debian.org>\n"
@@ -578,14 +578,6 @@ msgid "loading control file '%s' for package '%s'"
 msgstr "không thể đọc tập tin điều khiển “%s” cho gói “%s”"
 
 #: lib/dpkg/db-fsys-divert.c
-msgid "failed to open diversions file"
-msgstr "lỗi mở tập tin diversions (sự trệch đi)"
-
-#: lib/dpkg/db-fsys-divert.c
-msgid "failed to fstat diversions file"
-msgstr "lỗi fstat tập tin diversions (sự trệch đi)"
-
-#: lib/dpkg/db-fsys-divert.c
 #, c-format
 msgid "conflicting diversions involving '%.250s' or '%.250s'"
 msgstr "diversions (sự trệch đi) xung đột với “%.250s” hay “%.250s”"
@@ -626,6 +618,18 @@ msgid "%d file or directory currently installed.)\n"
 msgid_plural "%d files and directories currently installed.)\n"
 msgstr[0] "%d tập tin và thư mục hiện đã được cài đặt.)\n"
 
+#: lib/dpkg/db-fsys-load.c
+#, fuzzy, c-format
+#| msgid "cannot append to '%s'"
+msgid "cannot open %s file"
+msgstr "không thể nối thêm vào “%s”"
+
+#: lib/dpkg/db-fsys-load.c
+#, fuzzy, c-format
+#| msgid "unable to create file '%s'"
+msgid "cannot get %s file metadata"
+msgstr "không thể tạo tập tin “%s”"
+
 #: lib/dpkg/db-fsys-override.c
 #, c-format
 msgid "invalid statoverride uid %s"
@@ -640,14 +644,6 @@ msgstr "mã số nhóm statoverride không hợp lệ %s"
 #, c-format
 msgid "invalid statoverride mode %s"
 msgstr "chế độ “statoverride” không hợp lệ %s"
-
-#: lib/dpkg/db-fsys-override.c
-msgid "failed to open statoverride file"
-msgstr "gặp lỗi khi mở tập tin statoverride"
-
-#: lib/dpkg/db-fsys-override.c
-msgid "failed to fstat statoverride file"
-msgstr "gặp lỗi khi fstat tập tin statoverride"
 
 #: lib/dpkg/db-fsys-override.c
 #, c-format
@@ -1502,8 +1498,8 @@ msgstr ""
 #, c-format
 msgid "MSDOS end of file (^Z) in value of field '%.*s' (missing newline?)"
 msgstr ""
-"gặp ký tự kết thúc tập tin dạng MSDOS (^Z) trong giá trị của trường "
-"“%.*s” (thiếu dòng mới à?)"
+"gặp ký tự kết thúc tập tin dạng MSDOS (^Z) trong giá trị của trường “%.*s” "
+"(thiếu dòng mới à?)"
 
 #: lib/dpkg/parse.c
 #, c-format
@@ -2164,11 +2160,11 @@ msgstr ""
 "gây nên các lỗi nghiêm trong đối với việc cài đặt của bạn.\n"
 "Ép buộc các tùy chọn được đánh dấu [*] được bật theo mặc định.\n"
 
-#: src/common/force.c src/deb/build.c src/deb/extract.c src/deb/info.c
-#: src/deb/main.c src/split/info.c src/split/main.c src/split/queue.c
-#: src/divert/main.c src/statoverride/main.c src/trigger/main.c
-#: src/query/main.c src/main/archives.c src/main/enquiry.c src/main/main.c
-#: src/main/packages.c src/main/select.c src/main/verify.c
+#: src/common/force.c src/realpath/main.c src/deb/build.c src/deb/extract.c
+#: src/deb/info.c src/deb/main.c src/split/info.c src/split/main.c
+#: src/split/queue.c src/divert/main.c src/statoverride/main.c
+#: src/trigger/main.c src/query/main.c src/main/archives.c src/main/enquiry.c
+#: src/main/main.c src/main/packages.c src/main/select.c src/main/verify.c
 msgid "<standard output>"
 msgstr "<đầu ra tiêu chuẩn>"
 
@@ -2208,6 +2204,80 @@ msgstr "không thể lấy thẻ điều quản nhãn an ninh"
 #, c-format
 msgid "cannot set security context for file object '%s'"
 msgstr "không thể đặt ngữ cảnh bảo mật cho đối tượng tập tin “%s”"
+
+#: src/realpath/main.c
+#, fuzzy
+#| msgid "Type dpkg-trigger --help for help about this utility."
+msgid "Use --help for help about this utility."
+msgstr "Gõ “dpkg-trigger --help” để xem trợ giúp về tiện ích này."
+
+#: src/realpath/main.c src/divert/main.c src/statoverride/main.c
+#, c-format
+msgid "Debian %s version %s.\n"
+msgstr "Debian %s phiên bản %s.\n"
+
+#: src/realpath/main.c src/deb/main.c src/split/main.c src/divert/main.c
+#: src/statoverride/main.c src/trigger/main.c src/query/main.c src/main/main.c
+#: utils/update-alternatives.c
+#, c-format
+msgid ""
+"This is free software; see the GNU General Public License version 2 or\n"
+"later for copying conditions. There is NO warranty.\n"
+msgstr ""
+"Đây là phần mềm tự do; xem Giấy Phép Công Cộng GNU (GPL)\n"
+"phiên bản 2 hoặc mới hơn để biết thêm về điều kiện sao chép.\n"
+"Ở đây KHÔNG CÓ BẢO HÀNH GÌ CẢ.\n"
+
+#: src/realpath/main.c
+#, fuzzy, c-format
+#| msgid ""
+#| "Usage: %s [<option> ...] <command>\n"
+#| "\n"
+msgid ""
+"Usage: %s [<option>...] <pathname>\n"
+"\n"
+msgstr ""
+"Cách dùng: %s [<tùy_chọn> …] <lệnh>\n"
+"\n"
+
+#: src/realpath/main.c
+#, c-format
+msgid ""
+"Options:\n"
+"  -z, --zero                   end output line with NUL, not newline.\n"
+"      --instdir <directory>    set the root directory.\n"
+"      --root <directory>       set the root directory.\n"
+"      --version                show the version.\n"
+"      --help                   show this help message.\n"
+"\n"
+msgstr ""
+
+#: src/realpath/main.c
+msgid "too many levels of symbolic links"
+msgstr ""
+
+#: src/realpath/main.c
+#, fuzzy, c-format
+#| msgid "cannot append to '%s'"
+msgid "cannot read link '%s'"
+msgstr "không thể nối thêm vào “%s”"
+
+#: src/realpath/main.c
+#, fuzzy, c-format
+#| msgid "symbolic link '%.250s' size has changed from %jd to %zd"
+msgid "symbolic link '%s' size has changed from %jd to %zd"
+msgstr "kích thước liên kết mềm “%.250s” được thay đổi từ %jd thành %zd"
+
+#: src/realpath/main.c
+#, fuzzy
+#| msgid "--%s needs a single argument"
+msgid "need a pathname argument"
+msgstr "“--%s” cần một đối số đơn"
+
+#: src/realpath/main.c
+#, c-format
+msgid "link '%s' includes root prefix '%s'"
+msgstr ""
 
 #: src/deb/build.c
 #, c-format
@@ -2721,18 +2791,6 @@ msgstr "--%s chỉ chấp nhận một đối số"
 #, c-format
 msgid "Debian '%s' package archive backend version %s.\n"
 msgstr "Hậu phương kho lưu gói Debian “%s” phiên bản %s.\n"
-
-#: src/deb/main.c src/split/main.c src/divert/main.c src/statoverride/main.c
-#: src/trigger/main.c src/query/main.c src/main/main.c
-#: utils/update-alternatives.c
-#, c-format
-msgid ""
-"This is free software; see the GNU General Public License version 2 or\n"
-"later for copying conditions. There is NO warranty.\n"
-msgstr ""
-"Đây là phần mềm tự do; xem Giấy Phép Công Cộng GNU (GPL)\n"
-"phiên bản 2 hoặc mới hơn để biết thêm về điều kiện sao chép.\n"
-"Ở đây KHÔNG CÓ BẢO HÀNH GÌ CẢ.\n"
 
 #: src/deb/main.c src/divert/main.c src/query/main.c src/main/main.c
 #, fuzzy, c-format
@@ -3518,11 +3576,6 @@ msgstr ""
 #: src/divert/main.c
 msgid "Use --help for help about diverting files."
 msgstr "Dùng tùy chọn “--help” để có thông tin trợ giúp về các tập tin hay"
-
-#: src/divert/main.c src/statoverride/main.c
-#, c-format
-msgid "Debian %s version %s.\n"
-msgstr "Debian %s phiên bản %s.\n"
 
 #: src/divert/main.c
 #, c-format
@@ -4368,11 +4421,11 @@ msgstr "tập tin cấu hình “%.250s” không nằm trong gói"
 #: src/main/archives.c
 #, c-format
 msgid ""
-"trying to overwrite '%.250s', which is the diverted version of "
-"'%.250s' (package: %.100s)"
+"trying to overwrite '%.250s', which is the diverted version of '%.250s' "
+"(package: %.100s)"
 msgstr ""
-"đang thử ghi đè lên “%.250s”, cái mà làm trệch hướng phiên bản của "
-"“%.250s” (gói: %.100s)"
+"đang thử ghi đè lên “%.250s”, cái mà làm trệch hướng phiên bản của “%.250s” "
+"(gói: %.100s)"
 
 #: src/main/archives.c
 #, c-format
@@ -5971,30 +6024,16 @@ msgid "status logger"
 msgstr "bộ ghi nhật ký trạng thái"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "kiến trúc “%s” là không hợp lệ: %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "kiến trúc “%s” là để dự trữ và không thể thêm vào"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "không thể gỡ bỏ kiến trúc non-foreign (không ngoại lai) “%s”"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "gỡ bỏ kiến trúc “%s” hiện nay đang được dùng bởi cơ sở dữ liệu"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--add-architecture is not available in AOSC OS, please contact the AOSC OS "
+"developer if you encounter problems."
 msgstr ""
-"không thể gỡ bỏ kiến trúc “%s” hiện tại đang được dùng bởi cơ sở dữ liệu"
+
+#: src/main/main.c
+msgid ""
+"--remove-architecture is not available in AOSC OS, please contact the AOSC "
+"OS developer if you encounter problems."
+msgstr ""
 
 #: src/main/main.c
 #, c-format
@@ -7428,6 +7467,39 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr ""
+
+#~ msgid "failed to open diversions file"
+#~ msgstr "lỗi mở tập tin diversions (sự trệch đi)"
+
+#~ msgid "failed to fstat diversions file"
+#~ msgstr "lỗi fstat tập tin diversions (sự trệch đi)"
+
+#~ msgid "failed to open statoverride file"
+#~ msgstr "gặp lỗi khi mở tập tin statoverride"
+
+#~ msgid "failed to fstat statoverride file"
+#~ msgstr "gặp lỗi khi fstat tập tin statoverride"
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "kiến trúc “%s” là không hợp lệ: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "kiến trúc “%s” là để dự trữ và không thể thêm vào"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "không thể gỡ bỏ kiến trúc non-foreign (không ngoại lai) “%s”"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr "gỡ bỏ kiến trúc “%s” hiện nay đang được dùng bởi cơ sở dữ liệu"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "không thể gỡ bỏ kiến trúc “%s” hiện tại đang được dùng bởi cơ sở dữ liệu"
 
 #, c-format
 #~ msgid "There is only one alternative in link group %s (providing %s): %s"

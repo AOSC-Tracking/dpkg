@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg-dev 1.16.8\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:21+0100\n"
+"POT-Creation-Date: 2024-05-06 10:23+0800\n"
 "PO-Revision-Date: 2014-12-02 20:24+0100\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
@@ -707,10 +707,6 @@ msgid "host architecture"
 msgstr "arquitectura del sistema"
 
 #: scripts/dpkg-buildpackage.pl
-msgid "debian/rules is not executable; fixing that"
-msgstr "«debian/rules» no es un fichero ejecutable, reparando"
-
-#: scripts/dpkg-buildpackage.pl
 msgid "build dependencies/conflicts unsatisfied; aborting"
 msgstr ""
 "Las dependencias y conflictos de construcción no están satisfechas, "
@@ -744,62 +740,6 @@ msgstr ""
 #, perl-format
 msgid "unable to determine %s"
 msgstr "no se pudo determinar «%s»"
-
-#: scripts/dpkg-buildpackage.pl
-msgid "using a gain-root-command while being root"
-msgstr ""
-"está usando una orden para convertirse en administrador («gain-root-"
-"command»), a pesar de que ya es el administrador"
-
-#: scripts/dpkg-buildpackage.pl
-msgid ""
-"fakeroot not found, either install the fakeroot\n"
-"package, specify a command with the -r option, or run this as root"
-msgstr ""
-"no se ha encontrado fakeroot; puede instalar el paquete fakeroot,\n"
-"definir una orden con la opción «-r», o ejecutar esto como administrador"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "gain-root-command '%s' not found"
-msgstr "no se ha encontrado la orden «%s» para convertirse en administrador"
-
-#: scripts/dpkg-buildpackage.pl
-#, fuzzy, perl-format
-#| msgid "unknown file type"
-msgid "disallowed target in %s field keyword \"%s\""
-msgstr "el tipo de fichero es desconocido"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is unknown in dpkg namespace"
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is uppercase; use \"%s\" instead"
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is invalid; use \"%s\" instead"
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-#, fuzzy, perl-format
-#| msgid "unknown file type"
-msgid "%s field keyword \"%s\" is unknown"
-msgstr "el tipo de fichero es desconocido"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "field %s contains duplicate keyword \"%s\""
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field contains both global and implementation specific keywords"
-msgstr ""
 
 #: scripts/dpkg-buildpackage.pl
 #, perl-format
@@ -877,15 +817,6 @@ msgstr "subida de binarios y diferencias (NO se incluye la fuente original)"
 #: scripts/dpkg-buildpackage.pl
 msgid "full upload (original source is included)"
 msgstr "subida completa (se incluye la fuente original)"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid ""
-"%s must be updated to support the 'build-arch' and 'build-indep' targets (at "
-"least '%s' seems to be missing)"
-msgstr ""
-"se debe actualizar %s para la compatibilidad con las tareas «build-arch» y "
-"«build-indep» (en apariencia, falta «%s»)"
 
 #: scripts/dpkg-buildtree.pl
 #, fuzzy
@@ -4907,6 +4838,43 @@ msgstr "el número de versión contiene el carácter ilegal «%s»"
 #, perl-format
 msgid "epoch part of the version number is not a number: '%s'"
 msgstr "la sección «epoch» del número de versión no es un número: «%s»"
+
+#~ msgid "debian/rules is not executable; fixing that"
+#~ msgstr "«debian/rules» no es un fichero ejecutable, reparando"
+
+#~ msgid "using a gain-root-command while being root"
+#~ msgstr ""
+#~ "está usando una orden para convertirse en administrador («gain-root-"
+#~ "command»), a pesar de que ya es el administrador"
+
+#~ msgid ""
+#~ "fakeroot not found, either install the fakeroot\n"
+#~ "package, specify a command with the -r option, or run this as root"
+#~ msgstr ""
+#~ "no se ha encontrado fakeroot; puede instalar el paquete fakeroot,\n"
+#~ "definir una orden con la opción «-r», o ejecutar esto como administrador"
+
+#, perl-format
+#~ msgid "gain-root-command '%s' not found"
+#~ msgstr "no se ha encontrado la orden «%s» para convertirse en administrador"
+
+#, fuzzy, perl-format
+#~| msgid "unknown file type"
+#~ msgid "disallowed target in %s field keyword \"%s\""
+#~ msgstr "el tipo de fichero es desconocido"
+
+#, fuzzy, perl-format
+#~| msgid "unknown file type"
+#~ msgid "%s field keyword \"%s\" is unknown"
+#~ msgstr "el tipo de fichero es desconocido"
+
+#, perl-format
+#~ msgid ""
+#~ "%s must be updated to support the 'build-arch' and 'build-indep' targets "
+#~ "(at least '%s' seems to be missing)"
+#~ msgstr ""
+#~ "se debe actualizar %s para la compatibilidad con las tareas «build-arch» "
+#~ "y «build-indep» (en apariencia, falta «%s»)"
 
 #, fuzzy, perl-format
 #~| msgid "Usage: %s [<option>...]"

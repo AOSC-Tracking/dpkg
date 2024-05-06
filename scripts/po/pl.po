@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg-dev 1.15.4\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:21+0100\n"
+"POT-Creation-Date: 2024-05-06 10:23+0800\n"
 "PO-Revision-Date: 2015-04-07 07:05+0200\n"
 "Last-Translator: Łukasz Dulny <BartekChom@poczta.onet.pl>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
@@ -667,10 +667,6 @@ msgid "host architecture"
 msgstr "architektura gościa"
 
 #: scripts/dpkg-buildpackage.pl
-msgid "debian/rules is not executable; fixing that"
-msgstr "debian/rules nie jest plikiem wykonywalnym - naprawianie tego"
-
-#: scripts/dpkg-buildpackage.pl
 msgid "build dependencies/conflicts unsatisfied; aborting"
 msgstr "niespełnione zależności/konflikty czasu budowania - przerywanie"
 
@@ -700,61 +696,6 @@ msgstr "nie podpisywane wydanie UNRELEASED - użyj --force-sign, aby nadpisać"
 #, perl-format
 msgid "unable to determine %s"
 msgstr "nie można określić %s"
-
-#: scripts/dpkg-buildpackage.pl
-msgid "using a gain-root-command while being root"
-msgstr "używanie polecenia-uzysk-praw-admin podczas bycia administratorem"
-
-#: scripts/dpkg-buildpackage.pl
-msgid ""
-"fakeroot not found, either install the fakeroot\n"
-"package, specify a command with the -r option, or run this as root"
-msgstr ""
-"nie znaleziono fakeroot, proszę zainstalować pakiet fakeroot lub\n"
-"podać polecenie w opcji -r, lub uruchomić ten program jako root"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "gain-root-command '%s' not found"
-msgstr "nie znaleziono polecenia-uzysk-praw-admin \"%s\""
-
-#: scripts/dpkg-buildpackage.pl
-#, fuzzy, perl-format
-#| msgid "unknown file type"
-msgid "disallowed target in %s field keyword \"%s\""
-msgstr "nieznany typ pliku"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is unknown in dpkg namespace"
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is uppercase; use \"%s\" instead"
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is invalid; use \"%s\" instead"
-msgstr ""
-
-#: scripts/dpkg-buildpackage.pl
-#, fuzzy, perl-format
-#| msgid "unknown file type"
-msgid "%s field keyword \"%s\" is unknown"
-msgstr "nieznany typ pliku"
-
-#: scripts/dpkg-buildpackage.pl
-#, fuzzy, perl-format
-#| msgid "Files field contains bad line `%s'"
-msgid "field %s contains duplicate keyword \"%s\""
-msgstr "Pole Files zawiera niepoprawną linię \"%s\""
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field contains both global and implementation specific keywords"
-msgstr ""
 
 #: scripts/dpkg-buildpackage.pl
 #, perl-format
@@ -829,15 +770,6 @@ msgstr "wydanie binarne i pliku różnic (oryginalne źródła NIE dołączone)"
 #: scripts/dpkg-buildpackage.pl
 msgid "full upload (original source is included)"
 msgstr "pełne wydanie (oryginalne źródła dołączone)"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid ""
-"%s must be updated to support the 'build-arch' and 'build-indep' targets (at "
-"least '%s' seems to be missing)"
-msgstr ""
-"%s musi zostać zaktualizowane w celu obsługi celów \"build-arch\" i 'build-"
-"indep' (brakuje co najmniej \"%s\")"
 
 #: scripts/dpkg-buildtree.pl
 #, fuzzy
@@ -4460,8 +4392,8 @@ msgstr "łatka %s modyfikuje plik %s za pomocą dowiązania symbolicznego: %s"
 #, perl-format
 msgid "original and modified files are /dev/null in diff '%s' (line %d)"
 msgstr ""
-"oryginalnym i zmodyfikowanym plikiem jest /dev/null w pliku łatki "
-"\"%s\" (linia %d)"
+"oryginalnym i zmodyfikowanym plikiem jest /dev/null w pliku łatki \"%s\" "
+"(linia %d)"
 
 #: scripts/Dpkg/Source/Patch.pm
 #, perl-format
@@ -4718,6 +4650,46 @@ msgstr "numer wersji zawiera niepoprawny znak \"%s\""
 #, perl-format
 msgid "epoch part of the version number is not a number: '%s'"
 msgstr "częśc epoki w numerze wersji nie jest liczbą: \"%s\""
+
+#~ msgid "debian/rules is not executable; fixing that"
+#~ msgstr "debian/rules nie jest plikiem wykonywalnym - naprawianie tego"
+
+#~ msgid "using a gain-root-command while being root"
+#~ msgstr "używanie polecenia-uzysk-praw-admin podczas bycia administratorem"
+
+#~ msgid ""
+#~ "fakeroot not found, either install the fakeroot\n"
+#~ "package, specify a command with the -r option, or run this as root"
+#~ msgstr ""
+#~ "nie znaleziono fakeroot, proszę zainstalować pakiet fakeroot lub\n"
+#~ "podać polecenie w opcji -r, lub uruchomić ten program jako root"
+
+#, perl-format
+#~ msgid "gain-root-command '%s' not found"
+#~ msgstr "nie znaleziono polecenia-uzysk-praw-admin \"%s\""
+
+#, fuzzy, perl-format
+#~| msgid "unknown file type"
+#~ msgid "disallowed target in %s field keyword \"%s\""
+#~ msgstr "nieznany typ pliku"
+
+#, fuzzy, perl-format
+#~| msgid "unknown file type"
+#~ msgid "%s field keyword \"%s\" is unknown"
+#~ msgstr "nieznany typ pliku"
+
+#, fuzzy, perl-format
+#~| msgid "Files field contains bad line `%s'"
+#~ msgid "field %s contains duplicate keyword \"%s\""
+#~ msgstr "Pole Files zawiera niepoprawną linię \"%s\""
+
+#, perl-format
+#~ msgid ""
+#~ "%s must be updated to support the 'build-arch' and 'build-indep' targets "
+#~ "(at least '%s' seems to be missing)"
+#~ msgstr ""
+#~ "%s musi zostać zaktualizowane w celu obsługi celów \"build-arch\" i "
+#~ "'build-indep' (brakuje co najmniej \"%s\")"
 
 #, fuzzy, perl-format
 #~| msgid "Usage: %s [<option>...]"

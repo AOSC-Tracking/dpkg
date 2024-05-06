@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.22.0\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-04-28 14:29+0100\n"
+"POT-Creation-Date: 2024-05-06 10:23+0800\n"
 "PO-Revision-Date: 2024-04-28 14:30+0100\n"
 "Last-Translator: Peter Krefting <peter@softwolves.pp.se>\n"
 "Language-Team: Svenska <tp-sv@listor.tp-sv.se>\n"
@@ -2020,11 +2020,11 @@ msgstr ""
 "installation.\n"
 "Tvingande flaggor markerade [*] är förvalda.\n"
 
-#: src/common/force.c src/deb/build.c src/deb/extract.c src/deb/info.c
-#: src/deb/main.c src/split/info.c src/split/main.c src/split/queue.c
-#: src/divert/main.c src/statoverride/main.c src/trigger/main.c
-#: src/query/main.c src/main/archives.c src/main/enquiry.c src/main/main.c
-#: src/main/packages.c src/main/select.c src/main/verify.c
+#: src/common/force.c src/realpath/main.c src/deb/build.c src/deb/extract.c
+#: src/deb/info.c src/deb/main.c src/split/info.c src/split/main.c
+#: src/split/queue.c src/divert/main.c src/statoverride/main.c
+#: src/trigger/main.c src/query/main.c src/main/archives.c src/main/enquiry.c
+#: src/main/main.c src/main/packages.c src/main/select.c src/main/verify.c
 msgid "<standard output>"
 msgstr "<standard ut>"
 
@@ -2065,6 +2065,80 @@ msgstr "kan inte hämta handtag för säkerhetsetiketter"
 #, c-format
 msgid "cannot set security context for file object '%s'"
 msgstr "kan inte sätta säkerhetssammanhang för filobjektet ”%s”"
+
+#: src/realpath/main.c
+#, fuzzy
+#| msgid "Type dpkg-trigger --help for help about this utility."
+msgid "Use --help for help about this utility."
+msgstr "Skriv dpkg-trigger --help för hjälp om detta verktyg."
+
+#: src/realpath/main.c src/divert/main.c src/statoverride/main.c
+#, c-format
+msgid "Debian %s version %s.\n"
+msgstr "Debian %s version %s.\n"
+
+#: src/realpath/main.c src/deb/main.c src/split/main.c src/divert/main.c
+#: src/statoverride/main.c src/trigger/main.c src/query/main.c src/main/main.c
+#: utils/update-alternatives.c
+#, c-format
+msgid ""
+"This is free software; see the GNU General Public License version 2 or\n"
+"later for copying conditions. There is NO warranty.\n"
+msgstr ""
+"Detta är fri programvara; se GNU General Public License version 2\n"
+"eller senare för kopieringsvillkor. Det finns INGEN garanti.\n"
+
+#: src/realpath/main.c
+#, fuzzy, c-format
+#| msgid ""
+#| "Usage: %s [<option>...] <command>\n"
+#| "\n"
+msgid ""
+"Usage: %s [<option>...] <pathname>\n"
+"\n"
+msgstr ""
+"Användning: %s [<flagga>...] <kommando>\n"
+"\n"
+
+#: src/realpath/main.c
+#, c-format
+msgid ""
+"Options:\n"
+"  -z, --zero                   end output line with NUL, not newline.\n"
+"      --instdir <directory>    set the root directory.\n"
+"      --root <directory>       set the root directory.\n"
+"      --version                show the version.\n"
+"      --help                   show this help message.\n"
+"\n"
+msgstr ""
+
+#: src/realpath/main.c
+msgid "too many levels of symbolic links"
+msgstr ""
+
+#: src/realpath/main.c
+#, fuzzy, c-format
+#| msgid "cannot read %s"
+msgid "cannot read link '%s'"
+msgstr "kan inte läsa %s"
+
+#: src/realpath/main.c
+#, fuzzy, c-format
+#| msgid "symbolic link '%.250s' size has changed from %jd to %zd"
+msgid "symbolic link '%s' size has changed from %jd to %zd"
+msgstr ""
+"storleken på den symboliska länken ”%.250s” har ändrats från %jd till %zd"
+
+#: src/realpath/main.c
+#, fuzzy
+#| msgid "--%s needs a single argument"
+msgid "need a pathname argument"
+msgstr "--%s behöver ett ensamt argument"
+
+#: src/realpath/main.c
+#, c-format
+msgid "link '%s' includes root prefix '%s'"
+msgstr ""
 
 #: src/deb/build.c
 #, c-format
@@ -2559,17 +2633,6 @@ msgstr "--%s tar exakt ett argument"
 #, c-format
 msgid "Debian '%s' package archive backend version %s.\n"
 msgstr "Debian ”%s” paketarkiveringsprogram version %s.\n"
-
-#: src/deb/main.c src/split/main.c src/divert/main.c src/statoverride/main.c
-#: src/trigger/main.c src/query/main.c src/main/main.c
-#: utils/update-alternatives.c
-#, c-format
-msgid ""
-"This is free software; see the GNU General Public License version 2 or\n"
-"later for copying conditions. There is NO warranty.\n"
-msgstr ""
-"Detta är fri programvara; se GNU General Public License version 2\n"
-"eller senare för kopieringsvillkor. Det finns INGEN garanti.\n"
 
 #: src/deb/main.c src/divert/main.c src/query/main.c src/main/main.c
 #, c-format
@@ -3277,11 +3340,6 @@ msgstr "--split tar som mest ett källfilnamn och ett destinationsprefix"
 #: src/divert/main.c
 msgid "Use --help for help about diverting files."
 msgstr "Använd --help för hjälp om att omdirigera filer."
-
-#: src/divert/main.c src/statoverride/main.c
-#, c-format
-msgid "Debian %s version %s.\n"
-msgstr "Debian %s version %s.\n"
 
 #: src/divert/main.c
 #, c-format
@@ -4050,8 +4108,8 @@ msgstr ""
 #: src/main/archives.c
 #, c-format
 msgid ""
-"trying to overwrite '%.250s', which is the diverted version of "
-"'%.250s' (package: %.100s)"
+"trying to overwrite '%.250s', which is the diverted version of '%.250s' "
+"(package: %.100s)"
 msgstr ""
 "försökte skriva över ”%.250s”, vilket är den omdirigerade varianten av "
 "”%.250s” (paket: %.100s)"
@@ -5482,30 +5540,16 @@ msgid "status logger"
 msgstr "statusloggare"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "arkitekturen ”%s” är ogiltig: %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "arkitekturen ”%s” är reserverad och kan inte läggas till"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "kan inte ta bort den icke oegna arkitekturen ”%s”"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "tar bort arkitekturen ”%s” som för närvarande används av databasen"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--add-architecture is not available in AOSC OS, please contact the AOSC OS "
+"developer if you encounter problems."
 msgstr ""
-"kan inte ta bort arkitekturen ”%s” som för närvarande används av databasen"
+
+#: src/main/main.c
+msgid ""
+"--remove-architecture is not available in AOSC OS, please contact the AOSC "
+"OS developer if you encounter problems."
+msgstr ""
 
 #: src/main/main.c
 #, c-format
@@ -6877,3 +6921,24 @@ msgstr "Kör update-alternatives för att ändra systemets val av alternativ"
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "Autentisering krävs för att köra update-alternatives"
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "arkitekturen ”%s” är ogiltig: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "arkitekturen ”%s” är reserverad och kan inte läggas till"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "kan inte ta bort den icke oegna arkitekturen ”%s”"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr "tar bort arkitekturen ”%s” som för närvarande används av databasen"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "kan inte ta bort arkitekturen ”%s” som för närvarande används av databasen"

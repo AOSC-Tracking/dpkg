@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg-dev 1.21.20\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:21+0100\n"
+"POT-Creation-Date: 2024-05-06 10:23+0800\n"
 "PO-Revision-Date: 2023-02-10 02:16+0100\n"
 "Last-Translator: Sébastien Poher <sebastien@volted.net>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
@@ -735,10 +735,6 @@ msgid "host architecture"
 msgstr "architecture hôte"
 
 #: scripts/dpkg-buildpackage.pl
-msgid "debian/rules is not executable; fixing that"
-msgstr "debian/rules n'est pas exécutable ; corrigé"
-
-#: scripts/dpkg-buildpackage.pl
 msgid "build dependencies/conflicts unsatisfied; aborting"
 msgstr "dépendances de construction et conflits non satisfaits ; abandon"
 
@@ -768,66 +764,6 @@ msgstr ""
 #, perl-format
 msgid "unable to determine %s"
 msgstr "impossible de déterminer %s"
-
-#: scripts/dpkg-buildpackage.pl
-msgid "using a gain-root-command while being root"
-msgstr ""
-"utilisation d'une commande pour obtenir les privilèges administrateur en "
-"tant qu'administrateur"
-
-#: scripts/dpkg-buildpackage.pl
-msgid ""
-"fakeroot not found, either install the fakeroot\n"
-"package, specify a command with the -r option, or run this as root"
-msgstr ""
-"fakeroot non trouvé, veuillez soit installer le paquet fakeroot,\n"
-"soit indiquer une commande avec l'option -r ou exécuter cette\n"
-"commande en tant qu'administrateur"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "gain-root-command '%s' not found"
-msgstr "commande pour obtenir les privilèges administrateur « %s » non trouvée"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "disallowed target in %s field keyword \"%s\""
-msgstr "cible non autorisée dans le champ %s mot-clé « %s »"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is unknown in dpkg namespace"
-msgstr ""
-"le mot-clé « %s » du champ %s est inconnu dans l'espace de noms de dpkg"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is uppercase; use \"%s\" instead"
-msgstr ""
-"le mot clé « %s » du champ %s est en majuscule ; utilisez « %s » à la place"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is invalid; use \"%s\" instead"
-msgstr ""
-"le mot clé « %s » du champ %s n’est pas valable ; utilisez « %s » à la place"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is unknown"
-msgstr "le mot clé « %s » du champ %s est inconnu"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "field %s contains duplicate keyword \"%s\""
-msgstr "le champ %s contient le mot clé dupliqué « %s »"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field contains both global and implementation specific keywords"
-msgstr ""
-"le champ %s contient à la fois des mots-clés globaux et des mots-clés "
-"spécifiques à la mise en œuvre"
 
 #: scripts/dpkg-buildpackage.pl
 #, perl-format
@@ -908,15 +844,6 @@ msgstr ""
 #: scripts/dpkg-buildpackage.pl
 msgid "full upload (original source is included)"
 msgstr "envoi complet (inclusion du code source d'origine)"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid ""
-"%s must be updated to support the 'build-arch' and 'build-indep' targets (at "
-"least '%s' seems to be missing)"
-msgstr ""
-"%s doit être mis à jour pour gérer les cibles « build-arch » et « build-"
-"indep » (au moins « %s » semble manquer)"
 
 #: scripts/dpkg-buildtree.pl
 #, fuzzy
@@ -4628,6 +4555,70 @@ msgstr "le numéro de version contient un caractère « %s » non autorisé"
 msgid "epoch part of the version number is not a number: '%s'"
 msgstr ""
 "la partie d'ère (« epoch ») du numéro de version n'est pas un nombre : « %s »"
+
+#~ msgid "debian/rules is not executable; fixing that"
+#~ msgstr "debian/rules n'est pas exécutable ; corrigé"
+
+#~ msgid "using a gain-root-command while being root"
+#~ msgstr ""
+#~ "utilisation d'une commande pour obtenir les privilèges administrateur en "
+#~ "tant qu'administrateur"
+
+#~ msgid ""
+#~ "fakeroot not found, either install the fakeroot\n"
+#~ "package, specify a command with the -r option, or run this as root"
+#~ msgstr ""
+#~ "fakeroot non trouvé, veuillez soit installer le paquet fakeroot,\n"
+#~ "soit indiquer une commande avec l'option -r ou exécuter cette\n"
+#~ "commande en tant qu'administrateur"
+
+#, perl-format
+#~ msgid "gain-root-command '%s' not found"
+#~ msgstr ""
+#~ "commande pour obtenir les privilèges administrateur « %s » non trouvée"
+
+#, perl-format
+#~ msgid "disallowed target in %s field keyword \"%s\""
+#~ msgstr "cible non autorisée dans le champ %s mot-clé « %s »"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is unknown in dpkg namespace"
+#~ msgstr ""
+#~ "le mot-clé « %s » du champ %s est inconnu dans l'espace de noms de dpkg"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is uppercase; use \"%s\" instead"
+#~ msgstr ""
+#~ "le mot clé « %s » du champ %s est en majuscule ; utilisez « %s » à la "
+#~ "place"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is invalid; use \"%s\" instead"
+#~ msgstr ""
+#~ "le mot clé « %s » du champ %s n’est pas valable ; utilisez « %s » à la "
+#~ "place"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is unknown"
+#~ msgstr "le mot clé « %s » du champ %s est inconnu"
+
+#, perl-format
+#~ msgid "field %s contains duplicate keyword \"%s\""
+#~ msgstr "le champ %s contient le mot clé dupliqué « %s »"
+
+#, perl-format
+#~ msgid "%s field contains both global and implementation specific keywords"
+#~ msgstr ""
+#~ "le champ %s contient à la fois des mots-clés globaux et des mots-clés "
+#~ "spécifiques à la mise en œuvre"
+
+#, perl-format
+#~ msgid ""
+#~ "%s must be updated to support the 'build-arch' and 'build-indep' targets "
+#~ "(at least '%s' seems to be missing)"
+#~ msgstr ""
+#~ "%s doit être mis à jour pour gérer les cibles « build-arch » et « build-"
+#~ "indep » (au moins « %s » semble manquer)"
 
 #, fuzzy, perl-format
 #~| msgid "Usage: %s [<option>...]"

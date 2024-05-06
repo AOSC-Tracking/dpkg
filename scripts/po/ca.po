@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg-dev 1.21.18\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:21+0100\n"
+"POT-Creation-Date: 2024-05-06 10:23+0800\n"
 "PO-Revision-Date: 2023-12-17 20:30+0100\n"
 "Last-Translator: Guillem Jover <guillem@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
@@ -608,10 +608,6 @@ msgid "host architecture"
 msgstr "arquitectura de l'amfitrió"
 
 #: scripts/dpkg-buildpackage.pl
-msgid "debian/rules is not executable; fixing that"
-msgstr "debian/rules no és executable: s'està corregint això"
-
-#: scripts/dpkg-buildpackage.pl
 msgid "build dependencies/conflicts unsatisfied; aborting"
 msgstr "dependències/conflictes de construcció no satisfetes; s'està avortant"
 
@@ -640,59 +636,6 @@ msgstr ""
 #, perl-format
 msgid "unable to determine %s"
 msgstr "no es pot determinar %s"
-
-#: scripts/dpkg-buildpackage.pl
-msgid "using a gain-root-command while being root"
-msgstr "s'està emprant una ordre-assolir-superusuari mentre s'és superusuari"
-
-#: scripts/dpkg-buildpackage.pl
-msgid ""
-"fakeroot not found, either install the fakeroot\n"
-"package, specify a command with the -r option, or run this as root"
-msgstr ""
-"no s'ha trobat fakeroot, instal·leu el paquet fakeroot,\n"
-"especifiqueu una ordre amb l'opció -r, o executeu-ho com superusuari"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "gain-root-command '%s' not found"
-msgstr "no s'ha trobat l'ordre-assolir-superusuari «%s»"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "disallowed target in %s field keyword \"%s\""
-msgstr "no s'accepta l'objectiu en el camp %s amb la paraula clau “%s”"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is unknown in dpkg namespace"
-msgstr ""
-"la paraula clau “%2$s” desconeguda en el camp %1$s a l'espai de noms de dpkg"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is uppercase; use \"%s\" instead"
-msgstr "la paraula clau “%2$s” és en majúscules en el camp %1$s; empreu “%3$s”"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is invalid; use \"%s\" instead"
-msgstr "la paraula clau “%2$s” no és vàlida en el camp %1$s; empreu “%3$s”"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field keyword \"%s\" is unknown"
-msgstr "la paraula clau “%2$s” és desconeguda en el camp %1$s"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "field %s contains duplicate keyword \"%s\""
-msgstr "la paraula clau “%2$s” és duplicada en el camp %1$s"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid "%s field contains both global and implementation specific keywords"
-msgstr "el camp %s conté paraules clau globals i especifiques d'implementació"
 
 #: scripts/dpkg-buildpackage.pl
 #, perl-format
@@ -769,15 +712,6 @@ msgstr "pujada de binaris i diff (NO s'inclou el codi font original)"
 #: scripts/dpkg-buildpackage.pl
 msgid "full upload (original source is included)"
 msgstr "pujada sencera (s'inclou el codi font original)"
-
-#: scripts/dpkg-buildpackage.pl
-#, perl-format
-msgid ""
-"%s must be updated to support the 'build-arch' and 'build-indep' targets (at "
-"least '%s' seems to be missing)"
-msgstr ""
-"s'ha d'actualitzar %s per admetre els objectius «build-arch» i «build-"
-"indep» (almenys sembla que manca «%s»)"
 
 #: scripts/dpkg-buildtree.pl
 #, fuzzy
@@ -4351,6 +4285,64 @@ msgstr "el número de versió conté un caràcter il·legal ‘%s‘"
 #, perl-format
 msgid "epoch part of the version number is not a number: '%s'"
 msgstr "l'època en la versió no és un número: «%s»"
+
+#~ msgid "debian/rules is not executable; fixing that"
+#~ msgstr "debian/rules no és executable: s'està corregint això"
+
+#~ msgid "using a gain-root-command while being root"
+#~ msgstr ""
+#~ "s'està emprant una ordre-assolir-superusuari mentre s'és superusuari"
+
+#~ msgid ""
+#~ "fakeroot not found, either install the fakeroot\n"
+#~ "package, specify a command with the -r option, or run this as root"
+#~ msgstr ""
+#~ "no s'ha trobat fakeroot, instal·leu el paquet fakeroot,\n"
+#~ "especifiqueu una ordre amb l'opció -r, o executeu-ho com superusuari"
+
+#, perl-format
+#~ msgid "gain-root-command '%s' not found"
+#~ msgstr "no s'ha trobat l'ordre-assolir-superusuari «%s»"
+
+#, perl-format
+#~ msgid "disallowed target in %s field keyword \"%s\""
+#~ msgstr "no s'accepta l'objectiu en el camp %s amb la paraula clau “%s”"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is unknown in dpkg namespace"
+#~ msgstr ""
+#~ "la paraula clau “%2$s” desconeguda en el camp %1$s a l'espai de noms de "
+#~ "dpkg"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is uppercase; use \"%s\" instead"
+#~ msgstr ""
+#~ "la paraula clau “%2$s” és en majúscules en el camp %1$s; empreu “%3$s”"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is invalid; use \"%s\" instead"
+#~ msgstr "la paraula clau “%2$s” no és vàlida en el camp %1$s; empreu “%3$s”"
+
+#, perl-format
+#~ msgid "%s field keyword \"%s\" is unknown"
+#~ msgstr "la paraula clau “%2$s” és desconeguda en el camp %1$s"
+
+#, perl-format
+#~ msgid "field %s contains duplicate keyword \"%s\""
+#~ msgstr "la paraula clau “%2$s” és duplicada en el camp %1$s"
+
+#, perl-format
+#~ msgid "%s field contains both global and implementation specific keywords"
+#~ msgstr ""
+#~ "el camp %s conté paraules clau globals i especifiques d'implementació"
+
+#, perl-format
+#~ msgid ""
+#~ "%s must be updated to support the 'build-arch' and 'build-indep' targets "
+#~ "(at least '%s' seems to be missing)"
+#~ msgstr ""
+#~ "s'ha d'actualitzar %s per admetre els objectius «build-arch» i «build-"
+#~ "indep» (almenys sembla que manca «%s»)"
 
 #~ msgid "Usage: %s [<option>...]\n"
 #~ msgstr "Forma d'ús: %s [<opció>…]\n"
