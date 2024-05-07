@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: dpkg 1.21.20\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
 "POT-Creation-Date: 2024-05-07 17:52+0800\n"
-"PO-Revision-Date: 2023-01-27 15:39-0500\n"
+"PO-Revision-Date: 2024-05-07 03:09-0700\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <debian-l10n-chinese@lists.debian.org>\n"
 "Language: zh_CN\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #: lib/dpkg/ar.c
 msgid "failed to fstat archive"
@@ -5397,12 +5397,15 @@ msgid ""
 "--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
 "maintainers for any problems encountered."
 msgstr ""
+"AOSC OS 不支持 --add-architecture 选项。如有任何需要，请联系 AOSC OS 开发者。"
 
 #: src/main/main.c
 msgid ""
 "--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
 "maintainers for any problems encountered."
 msgstr ""
+"AOSC OS 不支持 --remove-architecture 选项。如有任何需要，请联系 AOSC OS 开发"
+"者。"
 
 #: src/main/main.c
 #, c-format
