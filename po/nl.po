@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.22.1\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:20+0100\n"
+"POT-Creation-Date: 2024-05-07 17:52+0800\n"
 "PO-Revision-Date: 2023-12-03 17:45+0100\n"
 "Last-Translator: Frans Spiesschaert <Frans.Spiesschaert@yucom.be>\n"
 "Language-Team: Debian Dutch l10n Team <debian-l10n-dutch@lists.debian.org>\n"
@@ -4161,8 +4161,8 @@ msgstr ""
 #: src/main/archives.c
 #, c-format
 msgid ""
-"trying to overwrite '%.250s', which is the diverted version of "
-"'%.250s' (package: %.100s)"
+"trying to overwrite '%.250s', which is the diverted version of '%.250s' "
+"(package: %.100s)"
 msgstr ""
 "poging tot overschrijven van '%.250s', wat de omgeleide versie is van "
 "'%.250s' (pakket: %.100s)"
@@ -5635,33 +5635,16 @@ msgid "status logger"
 msgstr "statuslogger"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "architectuur '%s' is ongeldig: %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "architectuur '%s' is gereserveerd en kan niet toegevoegd worden"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "kan niet-vreemde architectuur '%s' niet verwijderen"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"architectuur '%s' die momenteel door de database gebruikt wordt, wordt "
-"verwijderd"
 
 #: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"kan architectuur '%s' die momenteel door de database gebruikt wordt, niet "
-"verwijderen"
 
 #: src/main/main.c
 #, c-format
@@ -7092,3 +7075,27 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "Authenticatie is nodig voor het uitvoeren van update-alternatives"
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "architectuur '%s' is ongeldig: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "architectuur '%s' is gereserveerd en kan niet toegevoegd worden"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "kan niet-vreemde architectuur '%s' niet verwijderen"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr ""
+#~ "architectuur '%s' die momenteel door de database gebruikt wordt, wordt "
+#~ "verwijderd"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "kan architectuur '%s' die momenteel door de database gebruikt wordt, niet "
+#~ "verwijderen"

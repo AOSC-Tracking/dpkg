@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.17.0\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:20+0100\n"
+"POT-Creation-Date: 2024-05-07 17:52+0800\n"
 "PO-Revision-Date: 2015-04-07 10:01+0200\n"
 "Last-Translator: Ivan Masár <helix84@centrum.sk>\n"
 "Language-Team: Slovak <debian-l10n-slovak@lists.debian.org>\n"
@@ -4366,8 +4366,8 @@ msgstr "konfiguračný súbor „%.250s“ nebol v balíku nájdený"
 #: src/main/archives.c
 #, c-format
 msgid ""
-"trying to overwrite '%.250s', which is the diverted version of "
-"'%.250s' (package: %.100s)"
+"trying to overwrite '%.250s', which is the diverted version of '%.250s' "
+"(package: %.100s)"
 msgstr ""
 "pokus o prepísanie „%.250s“, ktorý je odklonenou verziou „%.250s“ (balík: "
 "„%.100s“)"
@@ -5995,29 +5995,16 @@ msgid "status logger"
 msgstr "záznam stavu"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "architektúra „%s“ je neplatná: %s"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "architektúra „%s“ je vyhradená a nemožno ju pridať"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "nemožno odstrániť architektúru „%s“, ktorá nie je cudzia"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "odstraňuje sa architektúra „%s“, ktorú momentálne používa databáza"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
-msgstr "nemožno odstrániť architektúru „%s“, ktorú momentálne používa databáza"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
 #, c-format
@@ -7490,6 +7477,27 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr ""
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "architektúra „%s“ je neplatná: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "architektúra „%s“ je vyhradená a nemožno ju pridať"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "nemožno odstrániť architektúru „%s“, ktorá nie je cudzia"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr "odstraňuje sa architektúra „%s“, ktorú momentálne používa databáza"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "nemožno odstrániť architektúru „%s“, ktorú momentálne používa databáza"
 
 #, c-format
 #~ msgid "There is only one alternative in link group %s (providing %s): %s"

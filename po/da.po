@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.17.22\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:20+0100\n"
+"POT-Creation-Date: 2024-05-07 17:52+0800\n"
 "PO-Revision-Date: 2015-04-07 09:48+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <debian-l10n-danish@lists.debian.org>\n"
@@ -4380,8 +4380,8 @@ msgstr "konfigurationsfil '%.250s' optræder ikke i pakken"
 #: src/main/archives.c
 #, c-format
 msgid ""
-"trying to overwrite '%.250s', which is the diverted version of "
-"'%.250s' (package: %.100s)"
+"trying to overwrite '%.250s', which is the diverted version of '%.250s' "
+"(package: %.100s)"
 msgstr ""
 "forsøger at overskrive '%.250s', som er den omdirigerede version af "
 "'%.250s'(pakke: %.100s)"
@@ -5944,29 +5944,16 @@ msgid "status logger"
 msgstr "statuslogger"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "arkitektur '%s' er ulovlig: %s"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "arkitektur '%s' er reserveret og kan ikke tilføjes"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "kan ikke fjerne ikkefremmed arkitektur '%s'"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "fjerner arkitektur '%s' aktuelt i brug af database"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
-msgstr "kan ikke fjerne arkitektur '%s' aktuelt i brug af databasen"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
 #, c-format
@@ -7409,6 +7396,26 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr ""
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "arkitektur '%s' er ulovlig: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "arkitektur '%s' er reserveret og kan ikke tilføjes"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "kan ikke fjerne ikkefremmed arkitektur '%s'"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr "fjerner arkitektur '%s' aktuelt i brug af database"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr "kan ikke fjerne arkitektur '%s' aktuelt i brug af databasen"
 
 #, c-format
 #~ msgid "There is only one alternative in link group %s (providing %s): %s"

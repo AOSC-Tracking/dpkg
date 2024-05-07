@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.17.0\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:20+0100\n"
+"POT-Creation-Date: 2024-05-07 17:52+0800\n"
 "PO-Revision-Date: 2015-04-07 09:51+0200\n"
 "Last-Translator: Håvard Korsvoll <korsvoll@skulelinux.no>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
@@ -4173,8 +4173,8 @@ msgstr "oppsettsfila «%.250s» finst ikkje i pakken"
 #: src/main/archives.c
 #, fuzzy, c-format
 msgid ""
-"trying to overwrite '%.250s', which is the diverted version of "
-"'%.250s' (package: %.100s)"
+"trying to overwrite '%.250s', which is the diverted version of '%.250s' "
+"(package: %.100s)"
 msgstr ""
 "prøver å skriva over «%.250s», som er den omdirigerte versjonen av "
 "«%.250s»%.10s%.100s%.10s"
@@ -5683,29 +5683,15 @@ msgid "status logger"
 msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr ""
-
-#: src/main/main.c
-#, fuzzy, c-format
-#| msgid "cannot remove file `%.250s'"
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "klarte ikkje fjerna fila «%.250s»"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr ""
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
 
 #: src/main/main.c
@@ -7090,6 +7076,11 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr ""
+
+#, fuzzy, c-format
+#~| msgid "cannot remove file `%.250s'"
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "klarte ikkje fjerna fila «%.250s»"
 
 #, fuzzy, c-format
 #~ msgid "removal of %.250s"

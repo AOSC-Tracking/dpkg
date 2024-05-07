@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.16.0\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:20+0100\n"
+"POT-Creation-Date: 2024-05-07 17:52+0800\n"
 "PO-Revision-Date: 2017-11-08 00:59+0100\n"
 "Last-Translator: Javier Fernandez-Sanguino <jfs@debian.org>\n"
 "Language-Team: Spanish <debian-l10n-spanish@lists.debian.org>\n"
@@ -4508,11 +4508,11 @@ msgstr "el conffile `%.250s' no aparece dentro del paquete"
 #: src/main/archives.c
 #, c-format
 msgid ""
-"trying to overwrite '%.250s', which is the diverted version of "
-"'%.250s' (package: %.100s)"
+"trying to overwrite '%.250s', which is the diverted version of '%.250s' "
+"(package: %.100s)"
 msgstr ""
-"intentando sobreescribir `%.250s', que es la versión desviada de "
-"`%.250s' (paquete %.100s)"
+"intentando sobreescribir `%.250s', que es la versión desviada de `%.250s' "
+"(paquete %.100s)"
 
 #: src/main/archives.c
 #, c-format
@@ -6133,32 +6133,16 @@ msgid "status logger"
 msgstr "registro de estado"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "la arquitectura '%s' es ilegal: %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "la arquitectura '%s' está reservada y no puede añadirse"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "no se puede borrar de una arquitectura no foránea `%s'"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"eliminando la arqutiectura '%s' que está actualmente en la base de datos"
 
 #: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"no se puede eliminar la arquitectura '%s' puesto que está en uso actualmente "
-"en la base de datos"
 
 #: src/main/main.c
 #, c-format
@@ -7640,6 +7624,29 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "Es necesario autenticarse para ejecutar `update-alternatives'"
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "la arquitectura '%s' es ilegal: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "la arquitectura '%s' está reservada y no puede añadirse"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "no se puede borrar de una arquitectura no foránea `%s'"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr ""
+#~ "eliminando la arqutiectura '%s' que está actualmente en la base de datos"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "no se puede eliminar la arquitectura '%s' puesto que está en uso "
+#~ "actualmente en la base de datos"
 
 #, c-format
 #~ msgid "There is only one alternative in link group %s (providing %s): %s"

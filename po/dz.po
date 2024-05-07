@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.17.0\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:20+0100\n"
+"POT-Creation-Date: 2024-05-07 17:52+0800\n"
 "PO-Revision-Date: 2015-04-07 09:48+0200\n"
 "Last-Translator: Tshewang Norbu <bumthap2006@hotmail.com>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
@@ -4355,8 +4355,8 @@ msgstr "ཀཱོན་ཕ་ཡིལ་`%.250s' འདི་ ཐུམ་ས�
 #: src/main/archives.c
 #, fuzzy, c-format
 msgid ""
-"trying to overwrite '%.250s', which is the diverted version of "
-"'%.250s' (package: %.100s)"
+"trying to overwrite '%.250s', which is the diverted version of '%.250s' "
+"(package: %.100s)"
 msgstr ""
 "`%.250s'%.10s%.100s%.10s གི་ཁ་ཕྱོགས་སྒྱུར་ཡོད་པའི་ཐོན་རིམ་ཨིན་མི་ `%.250s' འདི་ཚབ་སྲུང་འབད་"
 "ནི་ལུ་འབད་རྩོལ་བསྐྱེད་དོ།"
@@ -5856,29 +5856,15 @@ msgid "status logger"
 msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr ""
-
-#: src/main/main.c
-#, fuzzy, c-format
-#| msgid "cannot remove file `%.250s'"
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "ཡིག་སྣོད་ `%.250s' རྩ་བསྐྲད་གཏང་མི་ཚུགས།"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr ""
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
 
 #: src/main/main.c
@@ -7347,6 +7333,11 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr ""
+
+#, fuzzy, c-format
+#~| msgid "cannot remove file `%.250s'"
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "ཡིག་སྣོད་ `%.250s' རྩ་བསྐྲད་གཏང་མི་ཚུགས།"
 
 #, fuzzy, c-format
 #~ msgid "removal of %.250s"

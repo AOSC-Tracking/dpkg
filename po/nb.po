@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.17.0\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:20+0100\n"
+"POT-Creation-Date: 2024-05-07 17:52+0800\n"
 "PO-Revision-Date: 2015-04-07 09:51+0200\n"
 "Last-Translator: Hans Fredrik Nordhaug <hans@nordhaug.priv.no>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -4481,11 +4481,11 @@ msgstr "oppsettsfila «%.250s» finnes ikke i pakken"
 #: src/main/archives.c
 #, c-format
 msgid ""
-"trying to overwrite '%.250s', which is the diverted version of "
-"'%.250s' (package: %.100s)"
+"trying to overwrite '%.250s', which is the diverted version of '%.250s' "
+"(package: %.100s)"
 msgstr ""
-"prøver å skrive over «%.250s», som er den omdirigerte versjonen av "
-"«%.250s» (pakke: %.100s)"
+"prøver å skrive over «%.250s», som er den omdirigerte versjonen av «%.250s» "
+"(pakke: %.100s)"
 
 #: src/main/archives.c
 #, c-format
@@ -6123,29 +6123,15 @@ msgid "status logger"
 msgstr "status"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr ""
-
-#: src/main/main.c
-#, fuzzy, c-format
-#| msgid "cannot remove file `%.250s'"
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "klarte ikke fjerne fila «%.250s»"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr ""
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
 
 #: src/main/main.c
@@ -7720,6 +7706,11 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr ""
+
+#, fuzzy, c-format
+#~| msgid "cannot remove file `%.250s'"
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "klarte ikke fjerne fila «%.250s»"
 
 #, fuzzy, c-format
 #~| msgid "There is only one alternative in link group %s: %s"

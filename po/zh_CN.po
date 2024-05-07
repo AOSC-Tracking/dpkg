@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.21.20\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-03-10 20:20+0100\n"
+"POT-Creation-Date: 2024-05-07 17:52+0800\n"
 "PO-Revision-Date: 2023-01-27 15:39-0500\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <debian-l10n-chinese@lists.debian.org>\n"
@@ -4000,8 +4000,8 @@ msgstr "conffile '%s' 已标记为升级时移除，但在软件包中提供"
 #: src/main/archives.c
 #, c-format
 msgid ""
-"trying to overwrite '%.250s', which is the diverted version of "
-"'%.250s' (package: %.100s)"
+"trying to overwrite '%.250s', which is the diverted version of '%.250s' "
+"(package: %.100s)"
 msgstr "正在尝试覆盖 %.250s，它是 %.250s 的转移版本(软件包：%.100s)"
 
 #: src/main/archives.c
@@ -5393,29 +5393,16 @@ msgid "status logger"
 msgstr "状态日志记录器"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "%s 体系结构非法：%s"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "%s 体系结构已被保留，并且不能被添加"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "无法移除非异质体系结构 %s"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "将要移除的体系结构 %s ，当前仍被数据库使用"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
-msgstr "无法移除体系结构 %s ，当前它仍被数据库使用"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
 #, c-format
@@ -6754,6 +6741,26 @@ msgstr "运行 update-alternatives 工具以修改系统可选项的选择情况
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "需要认证后才能执行 update-alternatives"
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "%s 体系结构非法：%s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "%s 体系结构已被保留，并且不能被添加"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "无法移除非异质体系结构 %s"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr "将要移除的体系结构 %s ，当前仍被数据库使用"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr "无法移除体系结构 %s ，当前它仍被数据库使用"
 
 #, c-format
 #~ msgid "There is only one alternative in link group %s (providing %s): %s"
