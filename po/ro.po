@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.22.0\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-07-17 01:09+0200\n"
+"POT-Creation-Date: 2024-07-18 05:55+0800\n"
 "PO-Revision-Date: 2023-10-04 11:08+0200\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
@@ -6019,30 +6019,16 @@ msgid "status logger"
 msgstr "jurnalul de stare"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "arhitectura „%s” este ilegală: %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "arhitectura „%s” este rezervată și nu poate fi adăugată"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "nu se poate elimina arhitectura non-străină „%s”"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "se elimină arhitectura „%s” folosită în prezent de baza de date"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"nu se poate elimina arhitectura „%s” folosită în prezent de baza de date"
+
+#: src/main/main.c
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
 #, c-format
@@ -7473,6 +7459,27 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "Autentificarea este necesară pentru a rula «update-alternatives»"
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "arhitectura „%s” este ilegală: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "arhitectura „%s” este rezervată și nu poate fi adăugată"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "nu se poate elimina arhitectura non-străină „%s”"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr "se elimină arhitectura „%s” folosită în prezent de baza de date"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "nu se poate elimina arhitectura „%s” folosită în prezent de baza de date"
 
 #~ msgid "failed to open diversions file"
 #~ msgstr "eșec la deschiderea fișierului de redirecționări"

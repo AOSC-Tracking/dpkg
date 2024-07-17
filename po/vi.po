@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.18.2\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-07-17 01:09+0200\n"
+"POT-Creation-Date: 2024-07-18 05:55+0800\n"
 "PO-Revision-Date: 2016-01-14 08:22+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <debian-l10n-vietnamese@lists.debian.org>\n"
@@ -6032,30 +6032,16 @@ msgid "status logger"
 msgstr "bộ ghi nhật ký trạng thái"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "kiến trúc “%s” là không hợp lệ: %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "kiến trúc “%s” là để dự trữ và không thể thêm vào"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "không thể gỡ bỏ kiến trúc non-foreign (không ngoại lai) “%s”"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "gỡ bỏ kiến trúc “%s” hiện nay đang được dùng bởi cơ sở dữ liệu"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"không thể gỡ bỏ kiến trúc “%s” hiện tại đang được dùng bởi cơ sở dữ liệu"
+
+#: src/main/main.c
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
 #, c-format
@@ -7489,6 +7475,27 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr ""
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "kiến trúc “%s” là không hợp lệ: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "kiến trúc “%s” là để dự trữ và không thể thêm vào"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "không thể gỡ bỏ kiến trúc non-foreign (không ngoại lai) “%s”"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr "gỡ bỏ kiến trúc “%s” hiện nay đang được dùng bởi cơ sở dữ liệu"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "không thể gỡ bỏ kiến trúc “%s” hiện tại đang được dùng bởi cơ sở dữ liệu"
 
 #~ msgid "failed to open diversions file"
 #~ msgstr "lỗi mở tập tin diversions (sự trệch đi)"

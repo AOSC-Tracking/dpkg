@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.19.3\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-07-17 01:09+0200\n"
+"POT-Creation-Date: 2024-07-18 05:55+0800\n"
 "PO-Revision-Date: 2018-12-04 12:15+0100\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
@@ -6084,30 +6084,16 @@ msgid "status logger"
 msgstr "logger di stato"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "l'architettura \"%s\" non è consentita: %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "l'architettura \"%s\" è riservata e non può essere aggiunta"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "impossibile rimuovere l'architettura \"%s\" non-foreign"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "rimozione dell'architettura \"%s\" attualmente in uso dal database"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"impossibile rimuovere l'architettura \"%s\" attualmente in uso dal database"
+
+#: src/main/main.c
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
 #, c-format
@@ -7579,6 +7565,28 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr ""
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "l'architettura \"%s\" non è consentita: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "l'architettura \"%s\" è riservata e non può essere aggiunta"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "impossibile rimuovere l'architettura \"%s\" non-foreign"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr "rimozione dell'architettura \"%s\" attualmente in uso dal database"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "impossibile rimuovere l'architettura \"%s\" attualmente in uso dal "
+#~ "database"
 
 #~ msgid "failed to open diversions file"
 #~ msgstr "apertura del file con le deviazioni non riuscita"

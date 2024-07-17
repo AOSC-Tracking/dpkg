@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.21.20\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-07-17 01:09+0200\n"
+"POT-Creation-Date: 2024-07-18 05:55+0800\n"
 "PO-Revision-Date: 2023-02-05 23:45+0100\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@debian.org>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -5472,29 +5472,16 @@ msgid "status logger"
 msgstr "เครื่องมือบันทึกปูมของสถานะ"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "สถาปัตยกรรม '%s' ไม่สามารถใช้ได้: %s"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "สถาปัตยกรรม '%s' สงวนไว้ และไม่สามารถเพิ่มได้"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "ไม่สามารถลบสถาปัตยกรรม '%s' ที่ไม่ต่างถิ่นได้"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "กำลังลบสถาปัตยกรรม '%s' ซึ่งกำลังใช้งานอยู่ในฐานข้อมูล"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
-msgstr "ไม่สามารถลบสถาปัตยกรรม '%s' ซึ่งกำลังใช้งานอยู่ในฐานข้อมูล"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
 #, c-format
@@ -6837,6 +6824,26 @@ msgstr "เรียก update-alternatives เพื่อเปลี่ยน
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "ต้องยืนยันตัวบุคคลเพื่อเรียกทำงาน update-alternatives"
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "สถาปัตยกรรม '%s' ไม่สามารถใช้ได้: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "สถาปัตยกรรม '%s' สงวนไว้ และไม่สามารถเพิ่มได้"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "ไม่สามารถลบสถาปัตยกรรม '%s' ที่ไม่ต่างถิ่นได้"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr "กำลังลบสถาปัตยกรรม '%s' ซึ่งกำลังใช้งานอยู่ในฐานข้อมูล"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr "ไม่สามารถลบสถาปัตยกรรม '%s' ซึ่งกำลังใช้งานอยู่ในฐานข้อมูล"
 
 #~ msgid "failed to open diversions file"
 #~ msgstr "ไม่สามารถเปิดแฟ้ม diversions"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.21.20\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-07-17 01:09+0200\n"
+"POT-Creation-Date: 2024-07-18 05:55+0800\n"
 "PO-Revision-Date: 2023-02-04 14:11+0000\n"
 "Last-Translator: Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
@@ -5683,32 +5683,16 @@ msgid "status logger"
 msgstr "registador de estado"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "arquitectura '%s' é ilegal: %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "arquitectura '%s' é reservada e não pode ser adicionada"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "não pode remover a arquitectura nao-estrangeira '%s'"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"a remover a arquitectura '%s' actualmente em uso por outra base de dados"
 
 #: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"nao pode remover a arquitectura '%s' actualmente em utilização pela base de "
-"dados"
 
 #: src/main/main.c
 #, c-format
@@ -7112,6 +7096,29 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "É necessária autenticação para correr update-alternatives"
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "arquitectura '%s' é ilegal: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "arquitectura '%s' é reservada e não pode ser adicionada"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "não pode remover a arquitectura nao-estrangeira '%s'"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr ""
+#~ "a remover a arquitectura '%s' actualmente em uso por outra base de dados"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "nao pode remover a arquitectura '%s' actualmente em utilização pela base "
+#~ "de dados"
 
 #~ msgid "failed to open diversions file"
 #~ msgstr "falhou abrir ficheiro diversions"
