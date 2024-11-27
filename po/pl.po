@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.20.7\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-08-01 12:38+0200\n"
+"POT-Creation-Date: 2024-11-27 22:35+0800\n"
 "PO-Revision-Date: 2021-04-24 19:50+0200\n"
 "Last-Translator: Łukasz Dulny <bartekchom@poczta.onet.pl>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
@@ -5880,30 +5880,16 @@ msgid "status logger"
 msgstr "status programu logującego"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "architektura \"%s\" jest nieprawidłowa: %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "architektura \"%s\" jest zarezerwowana i nie może zostać dodana"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "nie można usunąć nieobcej architektury \"%s\""
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "usuwanie architektury \"%s\" używanej aktualnie przez bazę danych"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"nie można usunąć architektury \"%s\" używanej aktualnie przez bazę danych"
+
+#: src/main/main.c
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
 #, c-format
@@ -7354,6 +7340,27 @@ msgstr "Uruchom update-alternatives, aby zmienić wybór alternatyw w systemie"
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "Uruchomienie update-alternatives wymaga uwierzytelnienia"
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "architektura \"%s\" jest nieprawidłowa: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "architektura \"%s\" jest zarezerwowana i nie może zostać dodana"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "nie można usunąć nieobcej architektury \"%s\""
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr "usuwanie architektury \"%s\" używanej aktualnie przez bazę danych"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "nie można usunąć architektury \"%s\" używanej aktualnie przez bazę danych"
 
 #, c-format
 #~ msgid "open component '%.255s' (in %.255s) failed in an unexpected way"

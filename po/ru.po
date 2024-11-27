@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.21.20\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2024-08-01 12:38+0200\n"
+"POT-Creation-Date: 2024-11-27 22:35+0800\n"
 "PO-Revision-Date: 2023-02-06 00:01+0100\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
@@ -5734,31 +5734,16 @@ msgid "status logger"
 msgstr "протоколировщик состояния"
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is illegal: %s"
-msgstr "архитектура «%s» некорректна: %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "архитектура «%s» зарезервирована и не может быть добавлена"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "нельзя удалить родную архитектуру «%s»"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "удаляемая архитектура «%s» в данный момент используется в базе данных"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"невозможно удалить архитектуру «%s», которая в данный момент используется в "
-"базе данных"
+
+#: src/main/main.c
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
 #, c-format
@@ -7156,6 +7141,29 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "Для запуска update-alternatives требуется аутентификация"
+
+#, c-format
+#~ msgid "architecture '%s' is illegal: %s"
+#~ msgstr "архитектура «%s» некорректна: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "архитектура «%s» зарезервирована и не может быть добавлена"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "нельзя удалить родную архитектуру «%s»"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr ""
+#~ "удаляемая архитектура «%s» в данный момент используется в базе данных"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "невозможно удалить архитектуру «%s», которая в данный момент используется "
+#~ "в базе данных"
 
 #, c-format
 #~ msgid "open component '%.255s' (in %.255s) failed in an unexpected way"
