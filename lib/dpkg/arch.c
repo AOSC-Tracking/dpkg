@@ -146,6 +146,27 @@ dpkg_arch_find(const char *name)
 	for (arch = arch_head; arch; arch = arch->next) {
 		if (strcmp(arch->name, name) == 0)
 			return arch;
+		if (strcmp(arch->name, "loongarch64") == 0 &&
+		    strcmp(name, "loong64") == 0)
+			return arch;
+		if (strcmp(arch->name, "loongson3") == 0 &&
+		    strcmp(name, "mips64el") == 0)
+			return arch;
+		if (strcmp(arch->name, "armv4") == 0 &&
+		    strcmp(name, "armel") == 0)
+			return arch;
+		if (strcmp(arch->name, "armv6hf") == 0 &&
+		    strcmp(name, "armhf") == 0)
+			return arch;
+		if (strcmp(arch->name, "armv7hf") == 0 &&
+		    strcmp(name, "armhf") == 0)
+			return arch;
+		if (strcmp(arch->name, "i486") == 0 &&
+		    strcmp(name, "i386") == 0)
+			return arch;
+		if (strcmp(arch->name, "loongson2f") == 0 &&
+		   strcmp(name, "mips64el") == 0)
+			return arch;
 		last_arch = arch;
 	}
 
