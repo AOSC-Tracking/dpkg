@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.17.0\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2026-01-23 01:41+0100\n"
+"POT-Creation-Date: 2026-02-14 17:17+0800\n"
 "PO-Revision-Date: 2015-04-07 09:48+0200\n"
 "Last-Translator: Tshewang Norbu <bumthap2006@hotmail.com>\n"
 "Language-Team: Dzongkha <pgeyleg@dit.gov.bt>\n"
@@ -5957,29 +5957,15 @@ msgid "status logger"
 msgstr ""
 
 #: src/main/main.c
-#, fuzzy, c-format
-msgid "architecture '%s' is invalid: %s"
-msgstr "`%s' ས་སྒོ་ ནུས་མེད་ཐུམ་སྒྲིལ་མིང་ `%s': %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
 
 #: src/main/main.c
-#, fuzzy, c-format
-#| msgid "cannot remove file `%s'"
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "ཡིག་སྣོད་ `%s' རྩ་བསྐྲད་གཏང་མི་ཚུགས།"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr ""
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
 
 #: src/main/main.c
@@ -7455,6 +7441,15 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr ""
+
+#, fuzzy, c-format
+#~ msgid "architecture '%s' is invalid: %s"
+#~ msgstr "`%s' ས་སྒོ་ ནུས་མེད་ཐུམ་སྒྲིལ་མིང་ `%s': %s"
+
+#, fuzzy, c-format
+#~| msgid "cannot remove file `%s'"
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "ཡིག་སྣོད་ `%s' རྩ་བསྐྲད་གཏང་མི་ཚུགས།"
 
 #, fuzzy, c-format
 #~| msgid "subprocess %s returned error exit status %d"

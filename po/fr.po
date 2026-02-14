@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.21.20\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2026-01-23 01:41+0100\n"
+"POT-Creation-Date: 2026-02-14 17:17+0800\n"
 "PO-Revision-Date: 2023-02-05 23:47+0100\n"
 "Last-Translator: Sébastien Poher <sebastien@volted.net>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
@@ -6046,34 +6046,16 @@ msgid "status logger"
 msgstr "journaliseur de l'état"
 
 #: src/main/main.c
-#, fuzzy, c-format
-#| msgid "architecture name '%s' is invalid: %s"
-msgid "architecture '%s' is invalid: %s"
-msgstr "le nom de l'architecture « %s » n'est pas valable : %s"
-
-#: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "l'architecture « %s » est réservée et ne peut être ajoutée"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "impossible de supprimer l'architecture non étrangère « %s »"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"suppression de l'architecture « %s » actuellement utilisée dans la base de "
-"données"
 
 #: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
 msgstr ""
-"impossible de supprimer l'architecture « %s » actuellement utilisée dans la "
-"base de données"
 
 #: src/main/main.c
 #, fuzzy, c-format
@@ -7551,6 +7533,31 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "Une authentification est requise pour exécuter update-alternatives"
+
+#, fuzzy, c-format
+#~| msgid "architecture name '%s' is invalid: %s"
+#~ msgid "architecture '%s' is invalid: %s"
+#~ msgstr "le nom de l'architecture « %s » n'est pas valable : %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "l'architecture « %s » est réservée et ne peut être ajoutée"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "impossible de supprimer l'architecture non étrangère « %s »"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr ""
+#~ "suppression de l'architecture « %s » actuellement utilisée dans la base "
+#~ "de données"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "impossible de supprimer l'architecture « %s » actuellement utilisée dans "
+#~ "la base de données"
 
 #, c-format
 #~ msgid "%s subprocess returned error exit status %d"
