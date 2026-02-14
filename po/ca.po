@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.21.18\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2026-01-23 01:41+0100\n"
+"POT-Creation-Date: 2026-02-14 17:17+0800\n"
 "PO-Revision-Date: 2025-08-31 06:18+0200\n"
 "Last-Translator: Guillem Jover <guillem@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
@@ -5839,30 +5839,16 @@ msgid "status logger"
 msgstr "registre d'estat"
 
 #: src/main/main.c
-#, fuzzy, c-format
-#| msgid "architecture name '%s' is invalid: %s"
-msgid "architecture '%s' is invalid: %s"
-msgstr "l'arquitectura «%s» no és vàlida: %s"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "l'arquitectura «%s» és reservada i no es pot afegir"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "no es pot esborrar l'arquitectura no estrangera «%s»"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "s'esta esborrant l'arquitectura «%s» que és en ús a la base de dades"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
-msgstr "no es pot esborrar l'arquitectura «%s» que és en ús a la base de dades"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
 #, fuzzy, c-format
@@ -7296,6 +7282,29 @@ msgstr ""
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "Es requereix autenticació per a executar update-alternatives"
+
+#, fuzzy, c-format
+#~| msgid "architecture name '%s' is invalid: %s"
+#~ msgid "architecture '%s' is invalid: %s"
+#~ msgstr "l'arquitectura «%s» no és vàlida: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "l'arquitectura «%s» és reservada i no es pot afegir"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "no es pot esborrar l'arquitectura no estrangera «%s»"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr ""
+#~ "s'esta esborrant l'arquitectura «%s» que és en ús a la base de dades"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr ""
+#~ "no es pot esborrar l'arquitectura «%s» que és en ús a la base de dades"
 
 #, c-format
 #~ msgid "architecture '%s' is illegal: %s"

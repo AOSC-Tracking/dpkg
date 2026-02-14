@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dpkg 1.23.0\n"
 "Report-Msgid-Bugs-To: debian-dpkg@lists.debian.org\n"
-"POT-Creation-Date: 2026-01-23 01:41+0100\n"
+"POT-Creation-Date: 2026-02-14 17:17+0800\n"
 "PO-Revision-Date: 2025-08-31 06:35+0200\n"
 "Last-Translator: Guillem Jover <guillem@debian.org>\n"
 "Language-Team: English <debian-l10n-english@lists.debian.org>\n"
@@ -5610,30 +5610,16 @@ msgid "status logger"
 msgstr "status logger"
 
 #: src/main/main.c
-#, fuzzy, c-format
-#| msgid "architecture name '%s' is invalid: %s"
-msgid "architecture '%s' is invalid: %s"
-msgstr "architecture name '%s' is invalid: %s"
+msgid ""
+"--add-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
-#, c-format
-msgid "architecture '%s' is reserved and cannot be added"
-msgstr "architecture '%s' is reserved and cannot be added"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove non-foreign architecture '%s'"
-msgstr "cannot remove non-foreign architecture '%s'"
-
-#: src/main/main.c
-#, c-format
-msgid "removing architecture '%s' currently in use by database"
-msgstr "removing architecture '%s' currently in use by database"
-
-#: src/main/main.c
-#, c-format
-msgid "cannot remove architecture '%s' currently in use by the database"
-msgstr "cannot remove architecture '%s' currently in use by the database"
+msgid ""
+"--remove-architecture is not supported in AOSC OS. Please contact AOSC OS "
+"maintainers for any problems encountered."
+msgstr ""
 
 #: src/main/main.c
 #, fuzzy, c-format
@@ -7006,6 +6992,27 @@ msgstr "Run update-alternatives to modify system alternative selections"
 #: utils/update-alternatives.polkit.in
 msgid "Authentication is required to run update-alternatives"
 msgstr "Authentication is required to run update-alternatives"
+
+#, fuzzy, c-format
+#~| msgid "architecture name '%s' is invalid: %s"
+#~ msgid "architecture '%s' is invalid: %s"
+#~ msgstr "architecture name '%s' is invalid: %s"
+
+#, c-format
+#~ msgid "architecture '%s' is reserved and cannot be added"
+#~ msgstr "architecture '%s' is reserved and cannot be added"
+
+#, c-format
+#~ msgid "cannot remove non-foreign architecture '%s'"
+#~ msgstr "cannot remove non-foreign architecture '%s'"
+
+#, c-format
+#~ msgid "removing architecture '%s' currently in use by database"
+#~ msgstr "removing architecture '%s' currently in use by database"
+
+#, c-format
+#~ msgid "cannot remove architecture '%s' currently in use by the database"
+#~ msgstr "cannot remove architecture '%s' currently in use by the database"
 
 #, c-format
 #~ msgid "architecture '%s' is illegal: %s"
